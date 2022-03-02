@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiCheckResultMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiCheckResult">
+                    <id column="id" property="id" />
+                    <result column="reconciliationresult" property="reconciliationresult" />
+                    <result column="ruleid" property="ruleid" />
+                    <result column="accbook" property="accbook" />
+                    <result column="accbody" property="accbody" />
+                    <result column="groupcode" property="groupcode" />
+                    <result column="accsubject" property="accsubject" />
+                    <result column="direction" property="direction" />
+                    <result column="checkdimension" property="checkdimension" />
+                    <result column="checkauxiliary" property="checkauxiliary" />
+                    <result column="businesssystem" property="businesssystem" />
+                    <result column="checkcurrency" property="checkcurrency" />
+                    <result column="startperiod" property="startperiod" />
+                    <result column="endperiod" property="endperiod" />
+                    <result column="mattertype" property="mattertype" />
+                    <result column="transactiontype" property="transactiontype" />
+                    <result column="localcreditbusiness" property="localcreditbusiness" />
+                    <result column="originalcreditbusiness" property="originalcreditbusiness" />
+                    <result column="localcreditledger" property="localcreditledger" />
+                    <result column="originalcreditledger" property="originalcreditledger" />
+                    <result column="originaldebitledger" property="originaldebitledger" />
+                    <result column="originaldebitbusiness" property="originaldebitbusiness" />
+                    <result column="localdebitbusiness" property="localdebitbusiness" />
+                    <result column="localdebitledger" property="localdebitledger" />
+                    <result column="tally" property="tally" />
+                    <result column="tempvoucher" property="tempvoucher" />
+                    <result column="checktime" property="checktime" />
+                    <result column="operator" property="operator" />
+                    <result column="creator" property="creator" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="description" property="description" />
+                    <result column="ts" property="ts" />
+                    <result column="dr" property="dr" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="reconciliationresult2" property="reconciliationresult2" />
+                    <result column="reconciliationresult3" property="reconciliationresult3" />
+                    <result column="reconciliationresult4" property="reconciliationresult4" />
+                    <result column="reconciliationresult5" property="reconciliationresult5" />
+                    <result column="reconciliationresult6" property="reconciliationresult6" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, reconciliationresult, ruleid, accbook, accbody, groupcode, accsubject, direction, checkdimension, checkauxiliary, businesssystem, checkcurrency, startperiod, endperiod, mattertype, transactiontype, localcreditbusiness, originalcreditbusiness, localcreditledger, originalcreditledger, originaldebitledger, originaldebitbusiness, localdebitbusiness, localdebitledger, tally, tempvoucher, checktime, operator, creator, creationtime, modifier, modifiedtime, pk_org, pk_group, description, ts, dr, srctplid, reconciliationresult2, reconciliationresult3, reconciliationresult4, reconciliationresult5, reconciliationresult6, tenantid, ytenant_id
+        </sql>
+
+</mapper>

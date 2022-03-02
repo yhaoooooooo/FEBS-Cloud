@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.AccAccbodyMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.AccAccbody">
+                    <id column="id" property="id" />
+                    <result column="accbody" property="accbody" />
+                    <result column="accbook" property="accbook" />
+                    <result column="code" property="code" />
+                    <result column="bodyname" property="bodyname" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, accbody, accbook, code, bodyname, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

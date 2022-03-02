@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiFreedomDimensionArchivesMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiFreedomDimensionArchives">
+                    <id column="id" property="id" />
+                    <result column="ruleid" property="ruleid" />
+                    <result column="dimensionid" property="dimensionid" />
+                    <result column="rowno" property="rowno" />
+                    <result column="doctype" property="doctype" />
+                    <result column="valueid" property="valueid" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="description" property="description" />
+                    <result column="ts" property="ts" />
+                    <result column="dr" property="dr" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="creator" property="creator" />
+                    <result column="modifier" property="modifier" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, ruleid, dimensionid, rowno, doctype, valueid, tenantid, pk_org, pk_group, description, ts, dr, creationtime, modifiedtime, creator, modifier, srctplid, ytenant_id
+        </sql>
+
+</mapper>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiCrossCheckRuleMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiCrossCheckRule">
+                    <id column="id" property="id" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="rulecode" property="rulecode" />
+                    <result column="rulename" property="rulename" />
+                    <result column="controltype" property="controltype" />
+                    <result column="accbook" property="accbook" />
+                    <result column="accsubjectchart" property="accsubjectchart" />
+                    <result column="bindsubjectflag" property="bindsubjectflag" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="description" property="description" />
+                    <result column="ts" property="ts" />
+                    <result column="dr" property="dr" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="creator" property="creator" />
+                    <result column="modifier" property="modifier" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, pk_org, rulecode, rulename, controltype, accbook, accsubjectchart, bindsubjectflag, tenantid, pk_group, description, ts, dr, creationtime, modifiedtime, creator, modifier, srctplid, ytenant_id
+        </sql>
+
+</mapper>

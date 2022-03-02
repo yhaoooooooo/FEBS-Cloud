@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.DsGeneralledgerModelMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.DsGeneralledgerModel">
+                    <id column="id" property="id" />
+                    <result column="accsubject" property="accsubject" />
+                    <result column="name" property="name" />
+                    <result column="direction" property="direction" />
+                    <result column="accbook" property="accbook" />
+                    <result column="accbookcode" property="accbookcode" />
+                    <result column="accbody" property="accbody" />
+                    <result column="accstandard" property="accstandard" />
+                    <result column="period" property="period" />
+                    <result column="year" property="year" />
+                    <result column="currency" property="currency" />
+                    <result column="perbegin_debbal" property="perbeginDebbal" />
+                    <result column="perbegin_crebal" property="perbeginCrebal" />
+                    <result column="perbegin_bal" property="perbeginBal" />
+                    <result column="deb_accrual" property="debAccrual" />
+                    <result column="cre_accrual" property="creAccrual" />
+                    <result column="accrual" property="accrual" />
+                    <result column="perend_debbal" property="perendDebbal" />
+                    <result column="perend_crebal" property="perendCrebal" />
+                    <result column="perend_bal" property="perendBal" />
+                    <result column="istally" property="istally" />
+                    <result column="src_data_type" property="srcDataType" />
+                    <result column="other_bal" property="otherBal" />
+                    <result column="project" property="project" />
+                    <result column="materialclass" property="materialclass" />
+                    <result column="customer" property="customer" />
+                    <result column="at_fixedassetchangetypelistref" property="atFixedassetchangetypelistref" />
+                    <result column="supplier" property="supplier" />
+                    <result column="accentityMutiBD" property="accentitymutibd" />
+                    <result column="warehouse_sdk" property="warehouseSdk" />
+                    <result column="customerclass" property="customerclass" />
+                    <result column="dept" property="dept" />
+                    <result column="warehouse" property="warehouse" />
+                    <result column="accbooktype" property="accbooktype" />
+                    <result column="accperiodscheme" property="accperiodscheme" />
+                    <result column="accproperty" property="accproperty" />
+                    <result column="microserviceparameter" property="microserviceparameter" />
+                    <result column="autosubtask" property="autosubtask" />
+                    <result column="accbooktype_sdk" property="accbooktypeSdk" />
+                    <result column="org_fin_cashacct" property="orgFinCashacct" />
+                    <result column="supplierbankacct" property="supplierbankacct" />
+                    <result column="personnel" property="personnel" />
+                    <result column="accperiodyear" property="accperiodyear" />
+                    <result column="accsubjectchart" property="accsubjectchart" />
+                    <result column="accpurposes_sdk" property="accpurposesSdk" />
+                    <result column="finorgbankacct" property="finorgbankacct" />
+                    <result column="accpurposes" property="accpurposes" />
+                    <result column="customebankacct" property="customebankacct" />
+                    <result column="accperiod" property="accperiod" />
+                    <result column="autotask" property="autotask" />
+                    <result column="feeitem" property="feeitem" />
+                    <result column="at_usagestateref" property="atUsagestateref" />
+                    <result column="accelement" property="accelement" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="ts" property="ts" />
+                    <result column="material" property="material" />
+                    <result column="ucfdef_ymh01" property="ucfdefYmh01" />
+                    <result column="ucfdef_去玩儿_del" property="ucfdef去玩儿Del" />
+                    <result column="ucfdef_颜色" property="ucfdef颜色" />
+                    <result column="ucfdef_ys1111" property="ucfdefYs1111" />
+                    <result column="ucfdef_yanse" property="ucfdefYanse" />
+                    <result column="ucfdef_ys" property="ucfdefYs" />
+                    <result column="fa_fixedassetcategory" property="faFixedassetcategory" />
+                    <result column="ucfdef_an01" property="ucfdefAn01" />
+                    <result column="bankclass" property="bankclass" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, accsubject, name, direction, accbook, accbookcode, accbody, accstandard, period, year, currency, perbegin_debbal, perbegin_crebal, perbegin_bal, deb_accrual, cre_accrual, accrual, perend_debbal, perend_crebal, perend_bal, istally, src_data_type, other_bal, project, materialclass, customer, at_fixedassetchangetypelistref, supplier, accentityMutiBD, warehouse_sdk, customerclass, dept, warehouse, accbooktype, accperiodscheme, accproperty, microserviceparameter, autosubtask, accbooktype_sdk, org_fin_cashacct, supplierbankacct, personnel, accperiodyear, accsubjectchart, accpurposes_sdk, finorgbankacct, accpurposes, customebankacct, accperiod, autotask, feeitem, at_usagestateref, accelement, tenantid, ts, material, ucfdef_ymh01, ucfdef_去玩儿_del, ucfdef_颜色, ucfdef_ys1111, ucfdef_yanse, ucfdef_ys, fa_fixedassetcategory, ucfdef_an01, bankclass, ytenant_id
+        </sql>
+
+</mapper>

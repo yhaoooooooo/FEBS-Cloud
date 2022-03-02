@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaCocostbillMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaCocostbill">
+                    <id column="id" property="id" />
+                    <result column="sourceid" property="sourceid" />
+                    <result column="pid" property="pid" />
+                    <result column="planlevelid" property="planlevelid" />
+                    <result column="detailresultid" property="detailresultid" />
+                    <result column="batchno" property="batchno" />
+                    <result column="allocplan" property="allocplan" />
+                    <result column="allocrule" property="allocrule" />
+                    <result column="accentity" property="accentity" />
+                    <result column="accbook" property="accbook" />
+                    <result column="billcode" property="billcode" />
+                    <result column="vouchertype" property="vouchertype" />
+                    <result column="voucherid" property="voucherid" />
+                    <result column="busidate" property="busidate" />
+                    <result column="period" property="period" />
+                    <result column="srcsystem" property="srcsystem" />
+                    <result column="recordnumber" property="recordnumber" />
+                    <result column="recordid" property="recordid" />
+                    <result column="description" property="description" />
+                    <result column="costcenter" property="costcenter" />
+                    <result column="accsubject" property="accsubject" />
+                    <result column="currency" property="currency" />
+                    <result column="credit_org" property="creditOrg" />
+                    <result column="debit_org" property="debitOrg" />
+                    <result column="sharemny" property="sharemny" />
+                    <result column="maketime" property="maketime" />
+                    <result column="maker" property="maker" />
+                    <result column="direct" property="direct" />
+                    <result column="auxiliary" property="auxiliary" />
+                    <result column="coatype" property="coatype" />
+                    <result column="vr1" property="vr1" />
+                    <result column="vr2" property="vr2" />
+                    <result column="vr3" property="vr3" />
+                    <result column="vr4" property="vr4" />
+                    <result column="vr5" property="vr5" />
+                    <result column="vr6" property="vr6" />
+                    <result column="vr7" property="vr7" />
+                    <result column="vr8" property="vr8" />
+                    <result column="vr9" property="vr9" />
+                    <result column="vr10" property="vr10" />
+                    <result column="vr11" property="vr11" />
+                    <result column="vr12" property="vr12" />
+                    <result column="vr13" property="vr13" />
+                    <result column="vr14" property="vr14" />
+                    <result column="vr15" property="vr15" />
+                    <result column="vr16" property="vr16" />
+                    <result column="vr17" property="vr17" />
+                    <result column="vr18" property="vr18" />
+                    <result column="vr19" property="vr19" />
+                    <result column="vr20" property="vr20" />
+                    <result column="vr21" property="vr21" />
+                    <result column="vr22" property="vr22" />
+                    <result column="vr23" property="vr23" />
+                    <result column="vr24" property="vr24" />
+                    <result column="vr25" property="vr25" />
+                    <result column="vr26" property="vr26" />
+                    <result column="vr27" property="vr27" />
+                    <result column="vr28" property="vr28" />
+                    <result column="vr29" property="vr29" />
+                    <result column="vr30" property="vr30" />
+                    <result column="vr31" property="vr31" />
+                    <result column="vr32" property="vr32" />
+                    <result column="vr33" property="vr33" />
+                    <result column="vr34" property="vr34" />
+                    <result column="vr35" property="vr35" />
+                    <result column="vr36" property="vr36" />
+                    <result column="vr37" property="vr37" />
+                    <result column="vr38" property="vr38" />
+                    <result column="vr39" property="vr39" />
+                    <result column="vr40" property="vr40" />
+                    <result column="vr41" property="vr41" />
+                    <result column="vr42" property="vr42" />
+                    <result column="vr43" property="vr43" />
+                    <result column="vr44" property="vr44" />
+                    <result column="vr45" property="vr45" />
+                    <result column="vr46" property="vr46" />
+                    <result column="vr47" property="vr47" />
+                    <result column="vr48" property="vr48" />
+                    <result column="vr49" property="vr49" />
+                    <result column="vr50" property="vr50" />
+                    <result column="vr51" property="vr51" />
+                    <result column="vr52" property="vr52" />
+                    <result column="vr53" property="vr53" />
+                    <result column="vr54" property="vr54" />
+                    <result column="vr55" property="vr55" />
+                    <result column="vr56" property="vr56" />
+                    <result column="vr57" property="vr57" />
+                    <result column="vr58" property="vr58" />
+                    <result column="vr59" property="vr59" />
+                    <result column="vr60" property="vr60" />
+                    <result column="vr61" property="vr61" />
+                    <result column="vr62" property="vr62" />
+                    <result column="vr63" property="vr63" />
+                    <result column="vr64" property="vr64" />
+                    <result column="vr65" property="vr65" />
+                    <result column="vr66" property="vr66" />
+                    <result column="vr67" property="vr67" />
+                    <result column="vr68" property="vr68" />
+                    <result column="vr69" property="vr69" />
+                    <result column="vr70" property="vr70" />
+                    <result column="vr71" property="vr71" />
+                    <result column="vr72" property="vr72" />
+                    <result column="vr73" property="vr73" />
+                    <result column="vr74" property="vr74" />
+                    <result column="vr75" property="vr75" />
+                    <result column="vr76" property="vr76" />
+                    <result column="vr77" property="vr77" />
+                    <result column="vr78" property="vr78" />
+                    <result column="vr79" property="vr79" />
+                    <result column="vr80" property="vr80" />
+                    <result column="vr81" property="vr81" />
+                    <result column="vr82" property="vr82" />
+                    <result column="vr83" property="vr83" />
+                    <result column="vr84" property="vr84" />
+                    <result column="vr85" property="vr85" />
+                    <result column="vr86" property="vr86" />
+                    <result column="vr87" property="vr87" />
+                    <result column="vr88" property="vr88" />
+                    <result column="vr89" property="vr89" />
+                    <result column="vr90" property="vr90" />
+                    <result column="vr91" property="vr91" />
+                    <result column="vr92" property="vr92" />
+                    <result column="vr93" property="vr93" />
+                    <result column="vr94" property="vr94" />
+                    <result column="vr95" property="vr95" />
+                    <result column="vr96" property="vr96" />
+                    <result column="vr97" property="vr97" />
+                    <result column="vr98" property="vr98" />
+                    <result column="vr99" property="vr99" />
+                    <result column="vr100" property="vr100" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            sourceid, pid, planlevelid, detailresultid, batchno, allocplan, allocrule, accentity, accbook, billcode, vouchertype, voucherid, busidate, period, srcsystem, recordnumber, recordid, description, costcenter, accsubject, currency, credit_org, debit_org, sharemny, maketime, maker, direct, auxiliary, coatype, vr1, vr2, vr3, vr4, vr5, vr6, vr7, vr8, vr9, vr10, vr11, vr12, vr13, vr14, vr15, vr16, vr17, vr18, vr19, vr20, vr21, vr22, vr23, vr24, vr25, vr26, vr27, vr28, vr29, vr30, vr31, vr32, vr33, vr34, vr35, vr36, vr37, vr38, vr39, vr40, vr41, vr42, vr43, vr44, vr45, vr46, vr47, vr48, vr49, vr50, vr51, vr52, vr53, vr54, vr55, vr56, vr57, vr58, vr59, vr60, vr61, vr62, vr63, vr64, vr65, vr66, vr67, vr68, vr69, vr70, vr71, vr72, vr73, vr74, vr75, vr76, vr77, vr78, vr79, vr80, vr81, vr82, vr83, vr84, vr85, vr86, vr87, vr88, vr89, vr90, vr91, vr92, vr93, vr94, vr95, vr96, vr97, vr98, vr99, vr100, tenantid, srctplid, id, ytenant_id
+        </sql>
+
+</mapper>

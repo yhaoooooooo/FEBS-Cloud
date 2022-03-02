@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaSenderassconMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaSenderasscon">
+                    <id column="id" property="id" />
+                    <result column="auxiliary" property="auxiliary" />
+                    <result column="contype" property="contype" />
+                    <result column="assignasoa" property="assignasoa" />
+                    <result column="conditionarr" property="conditionarr" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+                    <result column="rownumber" property="rownumber" />
+                    <result column="costcenterstart" property="costcenterstart" />
+                    <result column="costcenterend" property="costcenterend" />
+                    <result column="costcentergroup" property="costcentergroup" />
+                    <result column="costelementstart" property="costelementstart" />
+                    <result column="costelementend" property="costelementend" />
+                    <result column="costelementgroup" property="costelementgroup" />
+                    <result column="elementscopestart" property="elementscopestart" />
+                    <result column="elementscopeend" property="elementscopeend" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="cosendruleid" property="cosendruleid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            auxiliary, contype, assignasoa, conditionarr, rownumber, costcenterstart, costcenterend, costcentergroup, costelementstart, costelementend, costelementgroup, elementscopestart, elementscopeend, tenantid, srctplid, cosendruleid, id, ytenant_id
+        </sql>
+
+</mapper>

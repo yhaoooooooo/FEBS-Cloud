@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.PubBillitemMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.PubBillitem">
+                    <id column="id" property="id" />
+                    <result column="billtable" property="billtable" />
+                    <result column="billtemplet" property="billtemplet" />
+                    <result column="cardshow" property="cardshow" />
+                    <result column="style" property="style" />
+                    <result column="componenttype" property="componenttype" />
+                    <result column="groupinfo" property="groupinfo" />
+                    <result column="grouporder" property="grouporder" />
+                    <result column="complexname" property="complexname" />
+                    <result column="complexname2" property="complexname2" />
+                    <result column="complexname3" property="complexname3" />
+                    <result column="complexname4" property="complexname4" />
+                    <result column="complexname5" property="complexname5" />
+                    <result column="complexname6" property="complexname6" />
+                    <result column="complextype" property="complextype" />
+                    <result column="cardshoworder" property="cardshoworder" />
+                    <result column="cardwidth" property="cardwidth" />
+                    <result column="code" property="code" />
+                    <result column="datatype" property="datatype" />
+                    <result column="defaultvalue" property="defaultvalue" />
+                    <result column="digit" property="digit" />
+                    <result column="roundtype" property="roundtype" />
+                    <result column="editformula" property="editformula" />
+                    <result column="fieldcode" property="fieldcode" />
+                    <result column="font" property="font" />
+                    <result column="hyperlink" property="hyperlink" />
+                    <result column="lable" property="lable" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="lablefont" property="lablefont" />
+                    <result column="length" property="length" />
+                    <result column="minlength" property="minlength" />
+                    <result column="listshow" property="listshow" />
+                    <result column="listshoworder" property="listshoworder" />
+                    <result column="listwidth" property="listwidth" />
+                    <result column="loadformula" property="loadformula" />
+                    <result column="nullable" property="nullable" />
+                    <result column="position" property="position" />
+                    <result column="readonly" property="readonly" />
+                    <result column="reftype" property="reftype" />
+                    <result column="validateformula" property="validateformula" />
+                    <result column="aftereditformula" property="aftereditformula" />
+                    <result column="beforeeditformula" property="beforeeditformula" />
+                    <result column="validatefrontformula" property="validatefrontformula" />
+                    <result column="aftereditfrontformula" property="aftereditfrontformula" />
+                    <result column="beforeeditfrontformula" property="beforeeditfrontformula" />
+                    <result column="validatetype" property="validatetype" />
+                    <result column="parameter" property="parameter" />
+                    <result column="showformat" property="showformat" />
+                    <result column="placeholder" property="placeholder" />
+                    <result column="placeholder2" property="placeholder2" />
+                    <result column="placeholder3" property="placeholder3" />
+                    <result column="placeholder4" property="placeholder4" />
+                    <result column="placeholder5" property="placeholder5" />
+                    <result column="placeholder6" property="placeholder6" />
+                    <result column="datasort" property="datasort" />
+                    <result column="istotalcol" property="istotalcol" />
+                    <result column="locktype" property="locktype" />
+                    <result column="sortapp" property="sortapp" />
+                    <result column="issort" property="issort" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, billtable, billtemplet, cardshow, style, componenttype, groupinfo, grouporder, complexname, complexname2, complexname3, complexname4, complexname5, complexname6, complextype, cardshoworder, cardwidth, code, datatype, defaultvalue, digit, roundtype, editformula, fieldcode, font, hyperlink, lable, name2, name3, name4, name5, name6, lablefont, length, minlength, listshow, listshoworder, listwidth, loadformula, nullable, position, readonly, reftype, validateformula, aftereditformula, beforeeditformula, validatefrontformula, aftereditfrontformula, beforeeditfrontformula, validatetype, parameter, showformat, placeholder, placeholder2, placeholder3, placeholder4, placeholder5, placeholder6, datasort, istotalcol, locktype, sortapp, issort, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

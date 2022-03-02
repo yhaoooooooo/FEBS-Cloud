@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.PtLayoutTemplateMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.PtLayoutTemplate">
+                    <id column="pk_layout_template" property="pkLayoutTemplate" />
+                    <result column="id" property="id" />
+                    <result column="name" property="name" />
+                    <result column="tpl" property="tpl" />
+                    <result column="i18n" property="i18n" />
+                    <result column="system" property="system" />
+                    <result column="tenant" property="tenant" />
+                    <result column="ts" property="ts" />
+                    <result column="dr" property="dr" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, name, tpl, pk_layout_template, i18n, system, tenant, ts, dr, ytenant_id
+        </sql>
+
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.IuapBpmRolemappingMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.IuapBpmRolemapping">
+                    <id column="id" property="id" />
+                    <result column="bpm_role_code" property="bpmRoleCode" />
+                    <result column="bpm_role_id" property="bpmRoleId" />
+                    <result column="create_time" property="createTime" />
+                    <result column="role_code" property="roleCode" />
+                    <result column="role_id" property="roleId" />
+                    <result column="sys_id" property="sysId" />
+                    <result column="tenant_id" property="tenantId" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, bpm_role_code, bpm_role_id, create_time, role_code, role_id, sys_id, tenant_id, ytenant_id
+        </sql>
+
+</mapper>

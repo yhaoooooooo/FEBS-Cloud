@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.PtWidgetMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.PtWidget">
+                    <id column="pk_widget" property="pkWidget" />
+                    <result column="id" property="id" />
+                    <result column="name" property="name" />
+                    <result column="descr" property="descr" />
+                    <result column="category" property="category" />
+                    <result column="wtype" property="wtype" />
+                    <result column="url" property="url" />
+                    <result column="isenable" property="isenable" />
+                    <result column="system" property="system" />
+                    <result column="tenant" property="tenant" />
+                    <result column="ctime" property="ctime" />
+                    <result column="cnf" property="cnf" />
+                    <result column="modifytime" property="modifytime" />
+                    <result column="setting" property="setting" />
+                    <result column="ts" property="ts" />
+                    <result column="dr" property="dr" />
+                    <result column="wlevel" property="wlevel" />
+                    <result column="tag" property="tag" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, name, descr, category, wtype, url, pk_widget, isenable, system, tenant, ctime, cnf, modifytime, setting, ts, dr, wlevel, tag, ytenant_id
+        </sql>
+
+</mapper>

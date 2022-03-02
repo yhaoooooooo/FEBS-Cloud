@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiAcctotalHisMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiAcctotalHis">
+                    <id column="id" property="id" />
+                    <result column="code" property="code" />
+                    <result column="direction" property="direction" />
+                    <result column="money" property="money" />
+                    <result column="name" property="name" />
+                    <result column="org" property="org" />
+                    <result column="srcId" property="srcid" />
+                    <result column="yearmonth" property="yearmonth" />
+                    <result column="isDel" property="isdel" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, code, direction, money, name, org, srcId, yearmonth, isDel, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

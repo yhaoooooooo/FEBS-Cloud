@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CwFactRptBalancesheetMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CwFactRptBalancesheet">
+                    <id column="id" property="id" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="report_code" property="reportCode" />
+                    <result column="report_name" property="reportName" />
+                    <result column="cperiod" property="cperiod" />
+                    <result column="accbook_id" property="accbookId" />
+                    <result column="accbook_code" property="accbookCode" />
+                    <result column="accbook_name" property="accbookName" />
+                    <result column="tallystatus" property="tallystatus" />
+                    <result column="tallystatus_name" property="tallystatusName" />
+                    <result column="qmje" property="qmje" />
+                    <result column="ncje" property="ncje" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, tenantid, report_code, report_name, cperiod, accbook_id, accbook_code, accbook_name, tallystatus, tallystatus_name, qmje, ncje, ytenant_id
+        </sql>
+
+</mapper>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.SysSaasTenantMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.SysSaasTenant">
+                    <id column="id" property="id" />
+                    <result column="accountquantity" property="accountquantity" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="effecttime" property="effecttime" />
+                    <result column="email" property="email" />
+                    <result column="expiredtime" property="expiredtime" />
+                    <result column="mobile" property="mobile" />
+                    <result column="orderbizid" property="orderbizid" />
+                    <result column="ordertype" property="ordertype" />
+                    <result column="productid" property="productid" />
+                    <result column="skuid" property="skuid" />
+                    <result column="srcid" property="srcid" />
+                    <result column="tenantdb" property="tenantdb" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="tenantstatus" property="tenantstatus" />
+                    <result column="tenantversion" property="tenantversion" />
+                    <result column="trialversion" property="trialversion" />
+                    <result column="tenanttype" property="tenanttype" />
+                    <result column="mulang" property="mulang" />
+                    <result column="defaultlang" property="defaultlang" />
+                    <result column="defaulttimezone" property="defaulttimezone" />
+                    <result column="def1" property="def1" />
+                    <result column="def2" property="def2" />
+                    <result column="def3" property="def3" />
+                    <result column="def4" property="def4" />
+                    <result column="def5" property="def5" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, accountquantity, creationtime, effecttime, email, expiredtime, mobile, orderbizid, ordertype, productid, skuid, srcid, tenantdb, tenantid, tenantstatus, tenantversion, trialversion, tenanttype, mulang, defaultlang, defaulttimezone, def1, def2, def3, def4, def5, srctplid, ytenant_id
+        </sql>
+
+</mapper>

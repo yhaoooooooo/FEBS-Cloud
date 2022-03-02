@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaAssignasoaMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaAssignasoa">
+                    <id column="id" property="id" />
+                    <result column="accpurposes" property="accpurposes" />
+                    <result column="periodtype" property="periodtype" />
+                    <result column="controlarea" property="controlarea" />
+                    <result column="sourcemodule" property="sourcemodule" />
+                    <result column="sendobjects" property="sendobjects" />
+                    <result column="acceptobjects" property="acceptobjects" />
+                    <result column="srcobj1" property="srcobj1" />
+                    <result column="srcobj2" property="srcobj2" />
+                    <result column="srcobj3" property="srcobj3" />
+                    <result column="srcobj4" property="srcobj4" />
+                    <result column="srcobj5" property="srcobj5" />
+                    <result column="srcobj6" property="srcobj6" />
+                    <result column="srcobj7" property="srcobj7" />
+                    <result column="srcobj8" property="srcobj8" />
+                    <result column="srcobj9" property="srcobj9" />
+                    <result column="srcobj10" property="srcobj10" />
+                    <result column="srcobj11" property="srcobj11" />
+                    <result column="srcobj12" property="srcobj12" />
+                    <result column="srcobj13" property="srcobj13" />
+                    <result column="srcobj14" property="srcobj14" />
+                    <result column="srcobj15" property="srcobj15" />
+                    <result column="srcobj16" property="srcobj16" />
+                    <result column="srcobj17" property="srcobj17" />
+                    <result column="srcobj18" property="srcobj18" />
+                    <result column="srcobj19" property="srcobj19" />
+                    <result column="srcobj20" property="srcobj20" />
+                    <result column="accobj1" property="accobj1" />
+                    <result column="accobj2" property="accobj2" />
+                    <result column="accobj3" property="accobj3" />
+                    <result column="accobj4" property="accobj4" />
+                    <result column="accobj5" property="accobj5" />
+                    <result column="accobj6" property="accobj6" />
+                    <result column="accobj7" property="accobj7" />
+                    <result column="accobj8" property="accobj8" />
+                    <result column="accobj9" property="accobj9" />
+                    <result column="accobj10" property="accobj10" />
+                    <result column="accobj11" property="accobj11" />
+                    <result column="accobj12" property="accobj12" />
+                    <result column="accobj13" property="accobj13" />
+                    <result column="accobj14" property="accobj14" />
+                    <result column="accobj15" property="accobj15" />
+                    <result column="accobj16" property="accobj16" />
+                    <result column="accobj17" property="accobj17" />
+                    <result column="accobj18" property="accobj18" />
+                    <result column="accobj19" property="accobj19" />
+                    <result column="accobj20" property="accobj20" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="creator" property="creator" />
+                    <result column="description" property="description" />
+                    <result column="dr" property="dr" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="ts" property="ts" />
+                    <result column="classifyid" property="classifyid" />
+                    <result column="code" property="code" />
+                    <result column="def1" property="def1" />
+                    <result column="def10" property="def10" />
+                    <result column="def11" property="def11" />
+                    <result column="def12" property="def12" />
+                    <result column="def13" property="def13" />
+                    <result column="def14" property="def14" />
+                    <result column="def15" property="def15" />
+                    <result column="def16" property="def16" />
+                    <result column="def17" property="def17" />
+                    <result column="def18" property="def18" />
+                    <result column="def19" property="def19" />
+                    <result column="def2" property="def2" />
+                    <result column="def20" property="def20" />
+                    <result column="def21" property="def21" />
+                    <result column="def22" property="def22" />
+                    <result column="def23" property="def23" />
+                    <result column="def24" property="def24" />
+                    <result column="def25" property="def25" />
+                    <result column="def26" property="def26" />
+                    <result column="def27" property="def27" />
+                    <result column="def28" property="def28" />
+                    <result column="def29" property="def29" />
+                    <result column="def3" property="def3" />
+                    <result column="def30" property="def30" />
+                    <result column="def4" property="def4" />
+                    <result column="def5" property="def5" />
+                    <result column="def6" property="def6" />
+                    <result column="def7" property="def7" />
+                    <result column="def8" property="def8" />
+                    <result column="def9" property="def9" />
+                    <result column="enable" property="enable" />
+                    <result column="name" property="name" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="parentid" property="parentid" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, accpurposes, periodtype, controlarea, sourcemodule, sendobjects, acceptobjects, srcobj1, srcobj2, srcobj3, srcobj4, srcobj5, srcobj6, srcobj7, srcobj8, srcobj9, srcobj10, srcobj11, srcobj12, srcobj13, srcobj14, srcobj15, srcobj16, srcobj17, srcobj18, srcobj19, srcobj20, accobj1, accobj2, accobj3, accobj4, accobj5, accobj6, accobj7, accobj8, accobj9, accobj10, accobj11, accobj12, accobj13, accobj14, accobj15, accobj16, accobj17, accobj18, accobj19, accobj20, creationtime, creator, description, dr, modifiedtime, modifier, ts, classifyid, code, def1, def10, def11, def12, def13, def14, def15, def16, def17, def18, def19, def2, def20, def21, def22, def23, def24, def25, def26, def27, def28, def29, def3, def30, def4, def5, def6, def7, def8, def9, enable, name, name2, name3, name4, name5, name6, parentid, tenantid, srctplid, pk_group, pk_org, ytenant_id
+        </sql>
+
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.PubDimtimeMonthMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.PubDimtimeMonth">
+                    <id column="YEARMONTH_NUM" property="yearmonthNum" />
+                    <result column="PK_YEARMONTH" property="pkYearmonth" />
+                    <result column="YEARMONTH_NAME" property="yearmonthName" />
+                    <result column="PK_MONTH" property="pkMonth" />
+                    <result column="MONTH_NAME" property="monthName" />
+                    <result column="PK_MONTH_NUM" property="pkMonthNum" />
+                    <result column="IS_LAST_QUARTER" property="isLastQuarter" />
+                    <result column="YEARQUARTER_ABB" property="yearquarterAbb" />
+                    <result column="PK_YEAR" property="pkYear" />
+                    <result column="YEAR_NAME" property="yearName" />
+                    <result column="IS_LAST_YEAR" property="isLastYear" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            YEARMONTH_NUM, PK_YEARMONTH, YEARMONTH_NAME, PK_MONTH, MONTH_NAME, PK_MONTH_NUM, IS_LAST_QUARTER, YEARQUARTER_ABB, PK_YEAR, YEAR_NAME, IS_LAST_YEAR
+        </sql>
+
+</mapper>

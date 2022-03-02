@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiFixedDimensionEnumMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiFixedDimensionEnum">
+                    <id column="id" property="id" />
+                    <result column="code" property="code" />
+                    <result column="name" property="name" />
+                    <result column="name1" property="name1" />
+                    <result column="name2" property="name2" />
+                    <result column="fullclasspath" property="fullclasspath" />
+                    <result column="param" property="param" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="description" property="description" />
+                    <result column="ts" property="ts" />
+                    <result column="dr" property="dr" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="creator" property="creator" />
+                    <result column="modifier" property="modifier" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="doctype" property="doctype" />
+                    <result column="doctype2" property="doctype2" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, code, name, name1, name2, fullclasspath, param, tenantid, pk_org, pk_group, description, ts, dr, creationtime, modifiedtime, creator, modifier, srctplid, doctype, doctype2, ytenant_id
+        </sql>
+
+</mapper>

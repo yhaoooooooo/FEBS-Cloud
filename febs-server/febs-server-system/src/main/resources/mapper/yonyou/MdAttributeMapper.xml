@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.MdAttributeMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.MdAttribute">
+                    <id column="id" property="id" />
+                    <result column="assemblyType" property="assemblytype" />
+                    <result column="columnName" property="columnname" />
+                    <result column="dataType" property="datatype" />
+                    <result column="dataTypeInfo" property="datatypeinfo" />
+                    <result column="defaultvalue" property="defaultvalue" />
+                    <result column="displayName" property="displayname" />
+                    <result column="displayName2" property="displayname2" />
+                    <result column="displayName3" property="displayname3" />
+                    <result column="displayName4" property="displayname4" />
+                    <result column="displayName5" property="displayname5" />
+                    <result column="displayName6" property="displayname6" />
+                    <result column="hidden" property="hidden" />
+                    <result column="isExtend" property="isextend" />
+                    <result column="isSyncDB" property="issyncdb" />
+                    <result column="maxLength" property="maxlength" />
+                    <result column="nullable" property="nullable" />
+                    <result column="numberDigit" property="numberdigit" />
+                    <result column="propertyName" property="propertyname" />
+                    <result column="refEntity" property="refentity" />
+                    <result column="refEntityCode" property="refentitycode" />
+                    <result column="tableName" property="tablename" />
+                    <result column="ownerEntity" property="ownerentity" />
+                    <result column="enumCode" property="enumcode" />
+                    <result column="rowno" property="rowno" />
+                    <result column="unionKey" property="unionkey" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, assemblyType, columnName, dataType, dataTypeInfo, defaultvalue, displayName, displayName2, displayName3, displayName4, displayName5, displayName6, hidden, isExtend, isSyncDB, maxLength, nullable, numberDigit, propertyName, refEntity, refEntityCode, tableName, ownerEntity, enumCode, rowno, unionKey, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

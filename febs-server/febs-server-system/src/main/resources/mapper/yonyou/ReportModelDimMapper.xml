@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ReportModelDimMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ReportModelDim">
+                    <id column="id" property="id" />
+                    <result column="code" property="code" />
+                    <result column="name" property="name" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="model_id" property="modelId" />
+                    <result column="dim_group" property="dimGroup" />
+                    <result column="dim_sys_type" property="dimSysType" />
+                    <result column="dim_sys_info" property="dimSysInfo" />
+                    <result column="sys_ref_type" property="sysRefType" />
+                    <result column="dim_type" property="dimType" />
+                    <result column="dim_data_type" property="dimDataType" />
+                    <result column="is_table_used" property="isTableUsed" />
+                    <result column="is_keydim" property="isKeydim" />
+                    <result column="dim_table_m" property="dimTableM" />
+                    <result column="dim_table_h" property="dimTableH" />
+                    <result column="dim_table" property="dimTable" />
+                    <result column="sec_class" property="secClass" />
+                    <result column="datasource_type" property="datasourceType" />
+                    <result column="service_class" property="serviceClass" />
+                    <result column="ts" property="ts" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="dim_id" property="dimId" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="is_indexdim" property="isIndexdim" />
+                    <result column="shortcode" property="shortcode" />
+                    <result column="sort" property="sort" />
+                    <result column="is_auxidim" property="isAuxidim" />
+                    <result column="is_hidden" property="isHidden" />
+                    <result column="data_type" property="dataType" />
+                    <result column="query_default" property="queryDefault" />
+                    <result column="fill_default" property="fillDefault" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, code, name, name2, name3, name4, name5, name6, model_id, dim_group, dim_sys_type, dim_sys_info, sys_ref_type, dim_type, dim_data_type, is_table_used, is_keydim, dim_table_m, dim_table_h, dim_table, sec_class, datasource_type, service_class, ts, tenantid, dim_id, srctplid, is_indexdim, shortcode, sort, is_auxidim, is_hidden, data_type, query_default, fill_default, ytenant_id
+        </sql>
+
+</mapper>

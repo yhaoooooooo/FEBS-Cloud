@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.RespVouchertempMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.RespVouchertemp">
+                    <id column="id" property="id" />
+                    <result column="accbook" property="accbook" />
+                    <result column="vouchertype" property="vouchertype" />
+                    <result column="billcode" property="billcode" />
+                    <result column="maketime" property="maketime" />
+                    <result column="maker" property="maker" />
+                    <result column="busidate" property="busidate" />
+                    <result column="period" property="period" />
+                    <result column="attachedbill" property="attachedbill" />
+                    <result column="auditor" property="auditor" />
+                    <result column="audittime" property="audittime" />
+                    <result column="srcsystem" property="srcsystem" />
+                    <result column="srcsystemid" property="srcsystemid" />
+                    <result column="totalcredit_global" property="totalcreditGlobal" />
+                    <result column="totalcredit_org" property="totalcreditOrg" />
+                    <result column="totaldebit_global" property="totaldebitGlobal" />
+                    <result column="totaldebit_org" property="totaldebitOrg" />
+                    <result column="voucherstatus" property="voucherstatus" />
+                    <result column="accentity" property="accentity" />
+                    <result column="accentity_v" property="accentityV" />
+                    <result column="displayname" property="displayname" />
+                    <result column="displayname2" property="displayname2" />
+                    <result column="displayname3" property="displayname3" />
+                    <result column="displayname4" property="displayname4" />
+                    <result column="displayname5" property="displayname5" />
+                    <result column="displayname6" property="displayname6" />
+                    <result column="editrule" property="editrule" />
+                    <result column="secondorg" property="secondorg" />
+                    <result column="secondorg_v" property="secondorgV" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="creator" property="creator" />
+                    <result column="description" property="description" />
+                    <result column="dr" property="dr" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="ts" property="ts" />
+                    <result column="def1" property="def1" />
+                    <result column="def2" property="def2" />
+                    <result column="def3" property="def3" />
+                    <result column="def4" property="def4" />
+                    <result column="def5" property="def5" />
+                    <result column="def6" property="def6" />
+                    <result column="def7" property="def7" />
+                    <result column="def8" property="def8" />
+                    <result column="def9" property="def9" />
+                    <result column="def10" property="def10" />
+                    <result column="def11" property="def11" />
+                    <result column="def12" property="def12" />
+                    <result column="def13" property="def13" />
+                    <result column="def14" property="def14" />
+                    <result column="def15" property="def15" />
+                    <result column="def16" property="def16" />
+                    <result column="def17" property="def17" />
+                    <result column="def18" property="def18" />
+                    <result column="def19" property="def19" />
+                    <result column="def20" property="def20" />
+                    <result column="def21" property="def21" />
+                    <result column="def22" property="def22" />
+                    <result column="def23" property="def23" />
+                    <result column="def24" property="def24" />
+                    <result column="def25" property="def25" />
+                    <result column="def26" property="def26" />
+                    <result column="def27" property="def27" />
+                    <result column="def28" property="def28" />
+                    <result column="def29" property="def29" />
+                    <result column="def30" property="def30" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="coatag" property="coatag" />
+                    <result column="coavbid" property="coavbid" />
+                    <result column="coa_planid" property="coaPlanid" />
+                    <result column="coa_type" property="coaType" />
+                    <result column="otpsign" property="otpsign" />
+                    <result column="merge_rule" property="mergeRule" />
+                    <result column="modify_rule" property="modifyRule" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+                    <result column="billid" property="billid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, accbook, vouchertype, billcode, maketime, maker, busidate, period, attachedbill, auditor, audittime, srcsystem, srcsystemid, totalcredit_global, totalcredit_org, totaldebit_global, totaldebit_org, voucherstatus, accentity, accentity_v, displayname, displayname2, displayname3, displayname4, displayname5, displayname6, editrule, secondorg, secondorg_v, creationtime, creator, description, dr, modifiedtime, modifier, pk_group, pk_org, ts, def1, def2, def3, def4, def5, def6, def7, def8, def9, def10, def11, def12, def13, def14, def15, def16, def17, def18, def19, def20, def21, def22, def23, def24, def25, def26, def27, def28, def29, def30, tenantid, srctplid, coatag, coavbid, coa_planid, coa_type, otpsign, merge_rule, modify_rule, billid, ytenant_id
+        </sql>
+
+</mapper>

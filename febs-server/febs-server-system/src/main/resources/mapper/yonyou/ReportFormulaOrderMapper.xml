@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ReportFormulaOrderMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ReportFormulaOrder">
+                    <id column="id" property="id" />
+                    <result column="rpt_item_id" property="rptItemId" />
+                    <result column="level_id" property="levelId" />
+                    <result column="formula_expression" property="formulaExpression" />
+                    <result column="calc_order" property="calcOrder" />
+                    <result column="ts" property="ts" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, rpt_item_id, level_id, formula_expression, calc_order, ts, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

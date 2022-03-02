@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.PubRefcfgMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.PubRefcfg">
+                    <id column="id" property="id" />
+                    <result column="funcode" property="funcode" />
+                    <result column="refcode" property="refcode" />
+                    <result column="refloadkey" property="refloadkey" />
+                    <result column="orderby" property="orderby" />
+                    <result column="enablecontrol" property="enablecontrol" />
+                    <result column="acscene" property="acscene" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="convertcol" property="convertcol" />
+                    <result column="mutilangs" property="mutilangs" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="enableauthid" property="enableauthid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, funcode, refcode, refloadkey, orderby, enablecontrol, acscene, pk_org, convertcol, mutilangs, tenantid, srctplid, enableauthid, ytenant_id
+        </sql>
+
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaCoexestatusBak1Mapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaCoexestatusBak1">
+                    <id column="id" property="id" />
+                    <result column="allocplan" property="allocplan" />
+                    <result column="allocrule" property="allocrule" />
+                    <result column="year" property="year" />
+                    <result column="period" property="period" />
+                    <result column="checkstatus" property="checkstatus" />
+                    <result column="checktime" property="checktime" />
+                    <result column="checkuser" property="checkuser" />
+                    <result column="exestatus" property="exestatus" />
+                    <result column="exeuser" property="exeuser" />
+                    <result column="exetime" property="exetime" />
+                    <result column="confirmstatus" property="confirmstatus" />
+                    <result column="batchno" property="batchno" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            allocplan, allocrule, year, period, checkstatus, checktime, checkuser, exestatus, exeuser, exetime, confirmstatus, batchno, tenantid, srctplid, id, ytenant_id
+        </sql>
+
+</mapper>

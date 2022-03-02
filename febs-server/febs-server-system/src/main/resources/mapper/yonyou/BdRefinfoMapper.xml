@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.BdRefinfoMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.BdRefinfo">
+                    <id column="id" property="id" />
+                    <result column="indexno" property="indexno" />
+                    <result column="isCheckListEnabled" property="ischecklistenabled" />
+                    <result column="isMultiSelectedEnabled" property="ismultiselectedenabled" />
+                    <result column="isNotLeafSelected" property="isnotleafselected" />
+                    <result column="isReturnCode" property="isreturncode" />
+                    <result column="isUseDataPower" property="isusedatapower" />
+                    <result column="isdefault" property="isdefault" />
+                    <result column="pk_entity" property="pkEntity" />
+                    <result column="refCodeNamePK" property="refcodenamepk" />
+                    <result column="refclassname" property="refclassname" />
+                    <result column="refname" property="refname" />
+                    <result column="strFieldCode" property="strfieldcode" />
+                    <result column="strFieldName" property="strfieldname" />
+                    <result column="strHiddenFieldCode" property="strhiddenfieldcode" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, indexno, isCheckListEnabled, isMultiSelectedEnabled, isNotLeafSelected, isReturnCode, isUseDataPower, isdefault, pk_entity, refCodeNamePK, refclassname, refname, strFieldCode, strFieldName, strHiddenFieldCode, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

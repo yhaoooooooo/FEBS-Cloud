@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CfRuleMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CfRule">
+                    <id column="id" property="id" />
+                    <result column="code" property="code" />
+                    <result column="name" property="name" />
+                    <result column="tlevel" property="tlevel" />
+                    <result column="cashflowtype" property="cashflowtype" />
+                    <result column="accsubjectchart" property="accsubjectchart" />
+                    <result column="accbook" property="accbook" />
+                    <result column="ruletype" property="ruletype" />
+                    <result column="creator" property="creator" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="description" property="description" />
+                    <result column="ts" property="ts" />
+                    <result column="dr" property="dr" />
+                    <result column="state" property="state" />
+                    <result column="priority" property="priority" />
+                    <result column="accsubject" property="accsubject" />
+                    <result column="isrevmatch" property="isrevmatch" />
+                    <result column="ismainrule" property="ismainrule" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, code, name, tlevel, cashflowtype, accsubjectchart, accbook, ruletype, creator, creationtime, modifier, modifiedtime, pk_org, pk_group, description, ts, dr, state, priority, accsubject, isrevmatch, ismainrule, name2, name3, name4, name5, name6, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

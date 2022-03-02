@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiSettlefiguresMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiSettlefigures">
+                    <id column="id" property="id" />
+                    <result column="accbook" property="accbook" />
+                    <result column="period" property="period" />
+                    <result column="currency" property="currency" />
+                    <result column="secondorg" property="secondorg" />
+                    <result column="accsubject" property="accsubject" />
+                    <result column="credit_org" property="creditOrg" />
+                    <result column="debit_org" property="debitOrg" />
+                    <result column="credit_original" property="creditOriginal" />
+                    <result column="debit_original" property="debitOriginal" />
+                    <result column="credit_quantity" property="creditQuantity" />
+                    <result column="debit_quantity" property="debitQuantity" />
+                    <result column="ts" property="ts" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, accbook, period, currency, secondorg, accsubject, credit_org, debit_org, credit_original, debit_original, credit_quantity, debit_quantity, ts, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiAuditItemMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiAuditItem">
+                    <id column="id" property="id" />
+                    <result column="modulecode" property="modulecode" />
+                    <result column="modulename" property="modulename" />
+                    <result column="doctypecode" property="doctypecode" />
+                    <result column="doctypename" property="doctypename" />
+                    <result column="classname" property="classname" />
+                    <result column="classify" property="classify" />
+                    <result column="priority" property="priority" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="url" property="url" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, modulecode, modulename, doctypecode, doctypename, classname, classify, priority, tenantid, srctplid, url, ytenant_id
+        </sql>
+
+</mapper>

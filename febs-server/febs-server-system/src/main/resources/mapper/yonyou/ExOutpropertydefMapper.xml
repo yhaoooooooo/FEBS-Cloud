@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ExOutpropertydefMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ExOutpropertydef">
+                    <id column="id" property="id" />
+                    <result column="assemblytype" property="assemblytype" />
+                    <result column="datatype" property="datatype" />
+                    <result column="outeridentifier" property="outeridentifier" />
+                    <result column="propertycode" property="propertycode" />
+                    <result column="propertyname" property="propertyname" />
+                    <result column="refouterentity" property="refouterentity" />
+                    <result column="rownumber" property="rownumber" />
+                    <result column="outerentityid" property="outerentityid" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, assemblytype, datatype, outeridentifier, propertycode, propertyname, refouterentity, rownumber, outerentityid, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

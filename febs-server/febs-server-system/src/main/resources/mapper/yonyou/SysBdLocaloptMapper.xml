@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.SysBdLocaloptMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.SysBdLocalopt">
+                    <id column="id" property="id" />
+                    <result column="bizkey" property="bizkey" />
+                    <result column="bizdesc" property="bizdesc" />
+                    <result column="bizresult" property="bizresult" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+                    <result column="bizstatus" property="bizstatus" />
+                    <result column="biztime" property="biztime" />
+                    <result column="callid" property="callid" />
+                    <result column="dubbotx" property="dubbotx" />
+                    <result column="ts" property="ts" />
+                    <result column="usercode" property="usercode" />
+                    <result column="userid" property="userid" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, bizkey, bizdesc, bizresult, bizstatus, biztime, callid, dubbotx, ts, usercode, userid, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

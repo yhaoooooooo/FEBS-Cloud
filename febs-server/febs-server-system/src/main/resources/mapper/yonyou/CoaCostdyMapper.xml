@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaCostdyMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaCostdy">
+                    <id column="id" property="id" />
+                    <result column="doctype" property="doctype" />
+                    <result column="code" property="code" />
+                    <result column="groupCode" property="groupcode" />
+                    <result column="groupName" property="groupname" />
+                    <result column="name" property="name" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="creator" property="creator" />
+                    <result column="description" property="description" />
+                    <result column="dr" property="dr" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="classifyid" property="classifyid" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, doctype, code, groupCode, groupName, name, name2, name3, name4, name5, name6, creationtime, creator, description, dr, modifiedtime, modifier, classifyid, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

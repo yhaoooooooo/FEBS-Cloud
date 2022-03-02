@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ReportDatasourceMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ReportDatasource">
+                    <id column="id" property="id" />
+                    <result column="accsubject" property="accsubject" />
+                    <result column="direction" property="direction" />
+                    <result column="accbookcode" property="accbookcode" />
+                    <result column="accbook" property="accbook" />
+                    <result column="istally" property="istally" />
+                    <result column="period" property="period" />
+                    <result column="accbody" property="accbody" />
+                    <result column="year" property="year" />
+                    <result column="currency" property="currency" />
+                    <result column="ts" property="ts" />
+                    <result column="accstandard" property="accstandard" />
+                    <result column="perbegin_debbal" property="perbeginDebbal" />
+                    <result column="perbegin_crebal" property="perbeginCrebal" />
+                    <result column="perbegin_bal" property="perbeginBal" />
+                    <result column="deb_accrual" property="debAccrual" />
+                    <result column="cre_accrual" property="creAccrual" />
+                    <result column="accrual" property="accrual" />
+                    <result column="perend_debbal" property="perendDebbal" />
+                    <result column="perend_crebal" property="perendCrebal" />
+                    <result column="perend_bal" property="perendBal" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, accsubject, direction, accbookcode, accbook, istally, period, accbody, year, currency, ts, accstandard, perbegin_debbal, perbegin_crebal, perbegin_bal, deb_accrual, cre_accrual, accrual, perend_debbal, perend_crebal, perend_bal
+        </sql>
+
+</mapper>

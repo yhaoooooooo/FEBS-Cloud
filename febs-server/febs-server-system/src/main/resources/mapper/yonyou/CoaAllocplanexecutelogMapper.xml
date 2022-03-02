@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaAllocplanexecutelogMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaAllocplanexecutelog">
+                    <id column="id" property="id" />
+                    <result column="allocplan" property="allocplan" />
+                    <result column="logid" property="logid" />
+                    <result column="period" property="period" />
+                    <result column="timetask" property="timetask" />
+                    <result column="status" property="status" />
+                    <result column="jobbegintime" property="jobbegintime" />
+                    <result column="jobendtime" property="jobendtime" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="confirmstatus" property="confirmstatus" />
+                    <result column="exetype" property="exetype" />
+                    <result column="databegintime" property="databegintime" />
+                    <result column="dataendtime" property="dataendtime" />
+                    <result column="message" property="message" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            allocplan, logid, period, timetask, status, jobbegintime, jobendtime, tenantid, srctplid, id, confirmstatus, exetype, databegintime, dataendtime, message, ytenant_id
+        </sql>
+
+</mapper>

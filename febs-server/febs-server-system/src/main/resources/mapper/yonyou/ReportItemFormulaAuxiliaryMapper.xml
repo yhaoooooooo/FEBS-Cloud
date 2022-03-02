@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ReportItemFormulaAuxiliaryMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ReportItemFormulaAuxiliary">
+                    <id column="id" property="id" />
+                    <result column="formula_id" property="formulaId" />
+                    <result column="auxiliary_dim_code" property="auxiliaryDimCode" />
+                    <result column="auxiliary_item_id" property="auxiliaryItemId" />
+                    <result column="auxiliary_item_code" property="auxiliaryItemCode" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ts" property="ts" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, formula_id, auxiliary_dim_code, auxiliary_item_id, auxiliary_item_code, tenantid, srctplid, ts, ytenant_id
+        </sql>
+
+</mapper>

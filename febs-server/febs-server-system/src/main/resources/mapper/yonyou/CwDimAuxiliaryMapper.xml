@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CwDimAuxiliaryMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CwDimAuxiliary">
+                    <id column="id" property="id" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="auxiliary" property="auxiliary" />
+                    <result column="def1_pk" property="def1Pk" />
+                    <result column="def1_code" property="def1Code" />
+                    <result column="def1_name" property="def1Name" />
+                    <result column="def2_pk" property="def2Pk" />
+                    <result column="def2_code" property="def2Code" />
+                    <result column="def2_name" property="def2Name" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, tenantid, auxiliary, def1_pk, def1_code, def1_name, def2_pk, def2_code, def2_name, ytenant_id
+        </sql>
+
+</mapper>

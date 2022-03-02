@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaCoexestatusMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaCoexestatus">
+                    <id column="id" property="id" />
+                    <result column="allocplan" property="allocplan" />
+                    <result column="allocrule" property="allocrule" />
+                    <result column="period" property="period" />
+                    <result column="checkstatus" property="checkstatus" />
+                    <result column="checktime" property="checktime" />
+                    <result column="checkuser" property="checkuser" />
+                    <result column="preparestatus" property="preparestatus" />
+                    <result column="prepareuser" property="prepareuser" />
+                    <result column="exestatus" property="exestatus" />
+                    <result column="exeuser" property="exeuser" />
+                    <result column="exetime" property="exetime" />
+                    <result column="confirmstatus" property="confirmstatus" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="exeFinishTime" property="exefinishtime" />
+                    <result column="dataStartTime" property="datastarttime" />
+                    <result column="dataEndTime" property="dataendtime" />
+                    <result column="process" property="process" />
+                    <result column="message" property="message" />
+                    <result column="timetask" property="timetask" />
+                    <result column="logid" property="logid" />
+                    <result column="exetype" property="exetype" />
+                    <result column="confirmtime" property="confirmtime" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            allocplan, allocrule, period, checkstatus, checktime, checkuser, preparestatus, prepareuser, exestatus, exeuser, exetime, confirmstatus, tenantid, srctplid, id, exeFinishTime, dataStartTime, dataEndTime, process, message, timetask, logid, exetype, confirmtime, ytenant_id
+        </sql>
+
+</mapper>

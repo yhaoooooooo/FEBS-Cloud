@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.BdAutotaskroleMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.BdAutotaskrole">
+                    <id column="id" property="id" />
+                    <result column="role" property="role" />
+                    <result column="rolecode" property="rolecode" />
+                    <result column="rolename" property="rolename" />
+                    <result column="autosubtask" property="autosubtask" />
+                    <result column="taskrule" property="taskrule" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="rolename2" property="rolename2" />
+                    <result column="rolename3" property="rolename3" />
+                    <result column="rolename4" property="rolename4" />
+                    <result column="rolename5" property="rolename5" />
+                    <result column="rolename6" property="rolename6" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, role, rolecode, rolename, autosubtask, taskrule, tenantid, srctplid, rolename2, rolename3, rolename4, rolename5, rolename6, ytenant_id
+        </sql>
+
+</mapper>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiVtLinkMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiVtLink">
+                    <id column="id" property="id" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="creator" property="creator" />
+                    <result column="description" property="description" />
+                    <result column="dr" property="dr" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="ts" property="ts" />
+                    <result column="accbook" property="accbook" />
+                    <result column="accbody" property="accbody" />
+                    <result column="billcode" property="billcode" />
+                    <result column="debit_org" property="debitOrg" />
+                    <result column="period" property="period" />
+                    <result column="voucherid" property="voucherid" />
+                    <result column="vtid" property="vtid" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, creationtime, creator, description, dr, modifiedtime, modifier, pk_group, pk_org, ts, accbook, accbody, billcode, debit_org, period, voucherid, vtid, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

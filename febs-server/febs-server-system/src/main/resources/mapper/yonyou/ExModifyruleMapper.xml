@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ExModifyruleMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ExModifyrule">
+                    <id column="id" property="id" />
+                    <result column="code" property="code" />
+                    <result column="name" property="name" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="headrule" property="headrule" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+                    <result column="bodyrule" property="bodyrule" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+                    <result column="isdefault" property="isdefault" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="issocial" property="issocial" />
+                    <result column="permission" property="permission" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, code, name, name2, name3, name4, name5, name6, headrule, bodyrule, isdefault, tenantid, issocial, permission, srctplid, ytenant_id
+        </sql>
+
+</mapper>

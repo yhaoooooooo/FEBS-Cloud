@@ -3,6 +3,7 @@ package cc.mrbird.febs.common.datasource.starter.inteceptor;
 import cc.mrbird.febs.common.core.entity.CurrentUser;
 import cc.mrbird.febs.common.core.utils.FebsUtil;
 import cc.mrbird.febs.common.datasource.starter.annotation.DataPermission;
+import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.mybatisplus.core.toolkit.PluginUtils;
 import com.baomidou.mybatisplus.extension.handlers.AbstractSqlParserHandler;
 import lombok.extern.slf4j.Slf4j;

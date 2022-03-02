@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaRulerelationdetailMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaRulerelationdetail">
+                    <id column="id" property="id" />
+                    <result column="assignasoaid" property="assignasoaid" />
+                    <result column="sourcemodule" property="sourcemodule" />
+                    <result column="srcobjvalue" property="srcobjvalue" />
+                    <result column="srccostcategory" property="srccostcategory" />
+                    <result column="accobjvalue" property="accobjvalue" />
+                    <result column="acccostcategory" property="acccostcategory" />
+                    <result column="srcobj1" property="srcobj1" />
+                    <result column="srcobj2" property="srcobj2" />
+                    <result column="srcobj3" property="srcobj3" />
+                    <result column="srcobj4" property="srcobj4" />
+                    <result column="srcobj5" property="srcobj5" />
+                    <result column="srcobj6" property="srcobj6" />
+                    <result column="srcobj7" property="srcobj7" />
+                    <result column="srcobj8" property="srcobj8" />
+                    <result column="srcobj9" property="srcobj9" />
+                    <result column="srcobj10" property="srcobj10" />
+                    <result column="srcobj11" property="srcobj11" />
+                    <result column="srcobj12" property="srcobj12" />
+                    <result column="srcobj13" property="srcobj13" />
+                    <result column="srcobj14" property="srcobj14" />
+                    <result column="srcobj15" property="srcobj15" />
+                    <result column="srcobj16" property="srcobj16" />
+                    <result column="srcobj17" property="srcobj17" />
+                    <result column="srcobj18" property="srcobj18" />
+                    <result column="srcobj19" property="srcobj19" />
+                    <result column="srcobj20" property="srcobj20" />
+                    <result column="accobj1" property="accobj1" />
+                    <result column="accobj2" property="accobj2" />
+                    <result column="accobj3" property="accobj3" />
+                    <result column="accobj4" property="accobj4" />
+                    <result column="accobj5" property="accobj5" />
+                    <result column="accobj6" property="accobj6" />
+                    <result column="accobj7" property="accobj7" />
+                    <result column="accobj8" property="accobj8" />
+                    <result column="accobj9" property="accobj9" />
+                    <result column="accobj10" property="accobj10" />
+                    <result column="accobj11" property="accobj11" />
+                    <result column="accobj12" property="accobj12" />
+                    <result column="accobj13" property="accobj13" />
+                    <result column="accobj14" property="accobj14" />
+                    <result column="accobj15" property="accobj15" />
+                    <result column="accobj16" property="accobj16" />
+                    <result column="accobj17" property="accobj17" />
+                    <result column="accobj18" property="accobj18" />
+                    <result column="accobj19" property="accobj19" />
+                    <result column="accobj20" property="accobj20" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, assignasoaid, sourcemodule, srcobjvalue, srccostcategory, accobjvalue, acccostcategory, srcobj1, srcobj2, srcobj3, srcobj4, srcobj5, srcobj6, srcobj7, srcobj8, srcobj9, srcobj10, srcobj11, srcobj12, srcobj13, srcobj14, srcobj15, srcobj16, srcobj17, srcobj18, srcobj19, srcobj20, accobj1, accobj2, accobj3, accobj4, accobj5, accobj6, accobj7, accobj8, accobj9, accobj10, accobj11, accobj12, accobj13, accobj14, accobj15, accobj16, accobj17, accobj18, accobj19, accobj20, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

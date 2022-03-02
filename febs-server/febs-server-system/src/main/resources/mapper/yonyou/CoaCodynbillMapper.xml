@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaCodynbillMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaCodynbill">
+                    <id column="id" property="id" />
+                    <result column="period" property="period" />
+                    <result column="year" property="year" />
+                    <result column="dataformula" property="dataformula" />
+                    <result column="dynfactor" property="dynfactor" />
+                    <result column="verifier" property="verifier" />
+                    <result column="checkstate" property="checkstate" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, period, year, dataformula, dynfactor, verifier, checkstate, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

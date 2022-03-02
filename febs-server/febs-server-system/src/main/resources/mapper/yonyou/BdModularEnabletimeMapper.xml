@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.BdModularEnabletimeMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.BdModularEnabletime">
+                    <id column="id" property="id" />
+                    <result column="code" property="code" />
+                    <result column="name" property="name" />
+                    <result column="booktype" property="booktype" />
+                    <result column="modular" property="modular" />
+                    <result column="enabletime" property="enabletime" />
+                    <result column="enable" property="enable" />
+                    <result column="creator" property="creator" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="description" property="description" />
+                    <result column="ts" property="ts" />
+                    <result column="dr" property="dr" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, code, name, booktype, modular, enabletime, enable, creator, creationtime, modifier, modifiedtime, pk_org, pk_group, description, ts, dr, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

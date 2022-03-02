@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ExOrgrelationMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ExOrgrelation">
+                    <id column="id" property="id" />
+                    <result column="src_system" property="srcSystem" />
+                    <result column="src_billtype" property="srcBilltype" />
+                    <result column="src_tradetype" property="srcTradetype" />
+                    <result column="relationattr1" property="relationattr1" />
+                    <result column="relationattr2" property="relationattr2" />
+                    <result column="relationattr3" property="relationattr3" />
+                    <result column="relationattr4" property="relationattr4" />
+                    <result column="relationattr5" property="relationattr5" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, src_system, src_billtype, src_tradetype, relationattr1, relationattr2, relationattr3, relationattr4, relationattr5, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

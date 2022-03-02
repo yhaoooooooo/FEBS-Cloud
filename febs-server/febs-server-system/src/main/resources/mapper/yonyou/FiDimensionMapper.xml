@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiDimensionMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiDimension">
+                    <id column="id" property="id" />
+                    <result column="ruleid" property="ruleid" />
+                    <result column="fixeddimensionid" property="fixeddimensionid" />
+                    <result column="formual" property="formual" />
+                    <result column="dimension1" property="dimension1" />
+                    <result column="dimension2" property="dimension2" />
+                    <result column="dimension3" property="dimension3" />
+                    <result column="dimension4" property="dimension4" />
+                    <result column="dimension5" property="dimension5" />
+                    <result column="dimension6" property="dimension6" />
+                    <result column="dimension7" property="dimension7" />
+                    <result column="dimension8" property="dimension8" />
+                    <result column="dimension9" property="dimension9" />
+                    <result column="dimension10" property="dimension10" />
+                    <result column="dimensiontype" property="dimensiontype" />
+                    <result column="flag" property="flag" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="description" property="description" />
+                    <result column="ts" property="ts" />
+                    <result column="dr" property="dr" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="creator" property="creator" />
+                    <result column="modifier" property="modifier" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, ruleid, fixeddimensionid, formual, dimension1, dimension2, dimension3, dimension4, dimension5, dimension6, dimension7, dimension8, dimension9, dimension10, dimensiontype, flag, tenantid, pk_org, pk_group, description, ts, dr, creationtime, modifiedtime, creator, modifier, srctplid, ytenant_id
+        </sql>
+
+</mapper>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ReportInfoMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ReportInfo">
+                    <id column="id" property="id" />
+                    <result column="pid" property="pid" />
+                    <result column="type" property="type" />
+                    <result column="biz_type" property="bizType" />
+                    <result column="name" property="name" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="rpt_item_type_id" property="rptItemTypeId" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="description" property="description" />
+                    <result column="labels" property="labels" />
+                    <result column="is_sys" property="isSys" />
+                    <result column="is_input" property="isInput" />
+                    <result column="href" property="href" />
+                    <result column="content" property="content" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+                    <result column="params" property="params" />
+                    <result column="sec_class" property="secClass" />
+                    <result column="status" property="status" />
+                    <result column="code" property="code" />
+                    <result column="report_type_id" property="reportTypeId" />
+                    <result column="report_category_id" property="reportCategoryId" />
+                    <result column="ts" property="ts" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="report_view_id" property="reportViewId" />
+                    <result column="accstandard" property="accstandard" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, pid, type, biz_type, name, name2, name3, name4, name5, name6, rpt_item_type_id, pk_org, description, labels, is_sys, is_input, href, content, params, sec_class, status, code, report_type_id, report_category_id, ts, tenantid, srctplid, report_view_id, accstandard, ytenant_id
+        </sql>
+
+</mapper>

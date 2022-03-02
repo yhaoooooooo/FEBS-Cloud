@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiVtBodyMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiVtBody">
+                    <id column="id" property="id" />
+                    <result column="accsubject" property="accsubject" />
+                    <result column="accsubjectdesc" property="accsubjectdesc" />
+                    <result column="accsubjectfun" property="accsubjectfun" />
+                    <result column="credit_originalfun" property="creditOriginalfun" />
+                    <result column="currency" property="currency" />
+                    <result column="debit_originalfun" property="debitOriginalfun" />
+                    <result column="description" property="description" />
+                    <result column="description2" property="description2" />
+                    <result column="description3" property="description3" />
+                    <result column="description4" property="description4" />
+                    <result column="description5" property="description5" />
+                    <result column="description6" property="description6" />
+                    <result column="header" property="header" />
+                    <result column="rate" property="rate" />
+                    <result column="rowno" property="rowno" />
+                    <result column="auxiliary" property="auxiliary" />
+                    <result column="auxorderstr" property="auxorderstr" />
+                    <result column="def1" property="def1" />
+                    <result column="deffun1" property="deffun1" />
+                    <result column="def2" property="def2" />
+                    <result column="deffun2" property="deffun2" />
+                    <result column="def3" property="def3" />
+                    <result column="deffun3" property="deffun3" />
+                    <result column="def4" property="def4" />
+                    <result column="deffun4" property="deffun4" />
+                    <result column="def5" property="def5" />
+                    <result column="deffun5" property="deffun5" />
+                    <result column="def6" property="def6" />
+                    <result column="deffun6" property="deffun6" />
+                    <result column="def7" property="def7" />
+                    <result column="deffun7" property="deffun7" />
+                    <result column="def8" property="def8" />
+                    <result column="deffun8" property="deffun8" />
+                    <result column="def9" property="def9" />
+                    <result column="deffun9" property="deffun9" />
+                    <result column="def10" property="def10" />
+                    <result column="deffun10" property="deffun10" />
+                    <result column="def11" property="def11" />
+                    <result column="deffun11" property="deffun11" />
+                    <result column="def12" property="def12" />
+                    <result column="deffun12" property="deffun12" />
+                    <result column="def13" property="def13" />
+                    <result column="deffun13" property="deffun13" />
+                    <result column="def14" property="def14" />
+                    <result column="deffun14" property="deffun14" />
+                    <result column="def15" property="def15" />
+                    <result column="deffun15" property="deffun15" />
+                    <result column="def16" property="def16" />
+                    <result column="deffun16" property="deffun16" />
+                    <result column="def17" property="def17" />
+                    <result column="deffun17" property="deffun17" />
+                    <result column="def18" property="def18" />
+                    <result column="deffun18" property="deffun18" />
+                    <result column="def19" property="def19" />
+                    <result column="deffun19" property="deffun19" />
+                    <result column="def20" property="def20" />
+                    <result column="deffun20" property="deffun20" />
+                    <result column="def21" property="def21" />
+                    <result column="deffun21" property="deffun21" />
+                    <result column="def22" property="def22" />
+                    <result column="deffun22" property="deffun22" />
+                    <result column="def23" property="def23" />
+                    <result column="deffun23" property="deffun23" />
+                    <result column="def24" property="def24" />
+                    <result column="deffun24" property="deffun24" />
+                    <result column="def25" property="def25" />
+                    <result column="deffun25" property="deffun25" />
+                    <result column="def26" property="def26" />
+                    <result column="deffun26" property="deffun26" />
+                    <result column="def27" property="def27" />
+                    <result column="deffun27" property="deffun27" />
+                    <result column="def28" property="def28" />
+                    <result column="deffun28" property="deffun28" />
+                    <result column="def29" property="def29" />
+                    <result column="deffun29" property="deffun29" />
+                    <result column="def30" property="def30" />
+                    <result column="deffun30" property="deffun30" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="debit_quantity" property="debitQuantity" />
+                    <result column="credit_quantity" property="creditQuantity" />
+                    <result column="price" property="price" />
+                    <result column="quantity" property="quantity" />
+                    <result column="secondorg" property="secondorg" />
+                    <result column="quantityfun" property="quantityfun" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, accsubject, accsubjectdesc, accsubjectfun, credit_originalfun, currency, debit_originalfun, description, description2, description3, description4, description5, description6, header, rate, rowno, auxiliary, auxorderstr, def1, deffun1, def2, deffun2, def3, deffun3, def4, deffun4, def5, deffun5, def6, deffun6, def7, deffun7, def8, deffun8, def9, deffun9, def10, deffun10, def11, deffun11, def12, deffun12, def13, deffun13, def14, deffun14, def15, deffun15, def16, deffun16, def17, deffun17, def18, deffun18, def19, deffun19, def20, deffun20, def21, deffun21, def22, deffun22, def23, deffun23, def24, deffun24, def25, deffun25, def26, deffun26, def27, deffun27, def28, deffun28, def29, deffun29, def30, deffun30, tenantid, srctplid, debit_quantity, credit_quantity, price, quantity, secondorg, quantityfun, ytenant_id
+        </sql>
+
+</mapper>

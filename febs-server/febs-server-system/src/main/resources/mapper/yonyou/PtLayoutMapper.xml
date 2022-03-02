@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.PtLayoutMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.PtLayout">
+                    <id column="pk_layout" property="pkLayout" />
+                    <result column="templateid" property="templateid" />
+                    <result column="setting" property="setting" />
+                    <result column="id" property="id" />
+                    <result column="name" property="name" />
+                    <result column="ctime" property="ctime" />
+                    <result column="parentid" property="parentid" />
+                    <result column="userid" property="userid" />
+                    <result column="system" property="system" />
+                    <result column="tenant" property="tenant" />
+                    <result column="isdefault" property="isdefault" />
+                    <result column="modifytime" property="modifytime" />
+                    <result column="wlevel" property="wlevel" />
+                    <result column="isenable" property="isenable" />
+                    <result column="rnd" property="rnd" />
+                    <result column="ts" property="ts" />
+                    <result column="dr" property="dr" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            templateid, setting, pk_layout, id, name, ctime, parentid, userid, system, tenant, isdefault, modifytime, wlevel, isenable, rnd, ts, dr, ytenant_id
+        </sql>
+
+</mapper>

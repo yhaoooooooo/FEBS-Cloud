@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.BdConsignmentMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.BdConsignment">
+                    <id column="id" property="id" />
+                    <result column="consignbody" property="consignbody" />
+                    <result column="accbody" property="accbody" />
+                    <result column="accpurposes" property="accpurposes" />
+                    <result column="type" property="type" />
+                    <result column="creator" property="creator" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="description" property="description" />
+                    <result column="ts" property="ts" />
+                    <result column="dr" property="dr" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="doctype" property="doctype" />
+                    <result column="def1" property="def1" />
+                    <result column="def2" property="def2" />
+                    <result column="def3" property="def3" />
+                    <result column="def4" property="def4" />
+                    <result column="def5" property="def5" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, consignbody, accbody, accpurposes, type, creator, creationtime, modifier, modifiedtime, pk_org, pk_group, description, ts, dr, tenantid, srctplid, doctype, def1, def2, def3, def4, def5, ytenant_id
+        </sql>
+
+</mapper>

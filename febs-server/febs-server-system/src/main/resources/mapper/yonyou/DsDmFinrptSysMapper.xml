@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.DsDmFinrptSysMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.DsDmFinrptSys">
+                    <id column="id" property="id" />
+                    <result column="year" property="year" />
+                    <result column="scenario" property="scenario" />
+                    <result column="period" property="period" />
+                    <result column="accbookorg" property="accbookorg" />
+                    <result column="accbook" property="accbook" />
+                    <result column="accstandard" property="accstandard" />
+                    <result column="currency" property="currency" />
+                    <result column="pre_report_item" property="preReportItem" />
+                    <result column="dept" property="dept" />
+                    <result column="project" property="project" />
+                    <result column="SS" property="ss" />
+                    <result column="customer" property="customer" />
+                    <result column="supplier" property="supplier" />
+                    <result column="adjs" property="adjs" />
+                    <result column="yearbegin" property="yearbegin" />
+                    <result column="accural" property="accural" />
+                    <result column="periodend" property="periodend" />
+                    <result column="vdefault" property="vdefault" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="ts" property="ts" />
+                    <result column="report_item_type" property="reportItemType" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, year, scenario, period, accbookorg, accbook, accstandard, currency, pre_report_item, dept, project, SS, customer, supplier, adjs, yearbegin, accural, periodend, vdefault, tenantid, ts, report_item_type, ytenant_id
+        </sql>
+
+</mapper>

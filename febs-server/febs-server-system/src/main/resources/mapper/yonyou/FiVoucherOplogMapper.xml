@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiVoucherOplogMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiVoucherOplog">
+                    <result column="id" property="id" />
+                    <result column="reqid" property="reqid" />
+                    <result column="billid" property="billid" />
+                    <result column="voucherid" property="voucherid" />
+                    <result column="vo" property="vo" />
+                    <result column="action" property="action" />
+                    <result column="param" property="param" />
+                    <result column="ts" property="ts" />
+                    <result column="MESSAGE" property="message" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, reqid, billid, voucherid, vo, action, param, ts, MESSAGE
+        </sql>
+
+</mapper>

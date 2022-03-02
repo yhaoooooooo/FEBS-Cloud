@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ReportModelCalcStepMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ReportModelCalcStep">
+                    <id column="id" property="id" />
+                    <result column="calc_model_id" property="calcModelId" />
+                    <result column="step" property="step" />
+                    <result column="step_name" property="stepName" />
+                    <result column="step_desc" property="stepDesc" />
+                    <result column="order" property="order" />
+                    <result column="step_name2" property="stepName2" />
+                    <result column="step_name3" property="stepName3" />
+                    <result column="step_name4" property="stepName4" />
+                    <result column="step_name5" property="stepName5" />
+                    <result column="step_name6" property="stepName6" />
+                    <result column="ts" property="ts" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, calc_model_id, step, step_name, step_desc, order, step_name2, step_name3, step_name4, step_name5, step_name6, ts, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

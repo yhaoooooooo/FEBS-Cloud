@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiNotetypeLinkMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiNotetypeLink">
+                    <id column="id" property="id" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="noteid" property="noteid" />
+                    <result column="notetype" property="notetype" />
+                    <result column="targetid" property="targetid" />
+                    <result column="targettype" property="targettype" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, creationtime, noteid, notetype, targetid, targettype, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

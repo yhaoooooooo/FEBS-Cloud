@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.PubEtlTableMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.PubEtlTable">
+                    <id column="pk_etl_table" property="pkEtlTable" />
+                    <result column="etlmod" property="etlmod" />
+                    <result column="tablename" property="tablename" />
+                    <result column="gentable" property="gentable" />
+                    <result column="isincr" property="isincr" />
+                    <result column="pk_field" property="pkField" />
+                    <result column="busidate" property="busidate" />
+                    <result column="incrdaynum" property="incrdaynum" />
+                    <result column="wherecond" property="wherecond" />
+                    <result column="etl_lasttime" property="etlLasttime" />
+                    <result column="isetl" property="isetl" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            pk_etl_table, etlmod, tablename, gentable, isincr, pk_field, busidate, incrdaynum, wherecond, etl_lasttime, isetl
+        </sql>
+
+</mapper>

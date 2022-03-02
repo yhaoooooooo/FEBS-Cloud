@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.BdBillsetMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.BdBillset">
+                    <id column="id" property="id" />
+                    <result column="accpurposes" property="accpurposes" />
+                    <result column="srcentity" property="srcentity" />
+                    <result column="downbilltype" property="downbilltype" />
+                    <result column="warehousefield" property="warehousefield" />
+                    <result column="creator" property="creator" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="description" property="description" />
+                    <result column="ts" property="ts" />
+                    <result column="dr" property="dr" />
+                    <result column="consignbodyfield" property="consignbodyfield" />
+                    <result column="accbody" property="accbody" />
+                    <result column="consignbodyname" property="consignbodyname" />
+                    <result column="warehousename" property="warehousename" />
+                    <result column="srcdealtype" property="srcdealtype" />
+                    <result column="targetsys" property="targetsys" />
+                    <result column="toia" property="toia" />
+                    <result column="consignment" property="consignment" />
+                    <result column="warehouse" property="warehouse" />
+                    <result column="toarap" property="toarap" />
+                    <result column="tocm" property="tocm" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srcentityid" property="srcentityid" />
+                    <result column="toit" property="toit" />
+                    <result column="link" property="link" />
+                    <result column="formula" property="formula" />
+                    <result column="tradetype" property="tradetype" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="rulenum" property="rulenum" />
+                    <result column="issystem" property="issystem" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, accpurposes, srcentity, downbilltype, warehousefield, creator, creationtime, modifier, modifiedtime, pk_org, pk_group, description, ts, dr, consignbodyfield, accbody, consignbodyname, warehousename, srcdealtype, targetsys, toia, consignment, warehouse, toarap, tocm, tenantid, srcentityid, toit, link, formula, tradetype, srctplid, rulenum, issystem, ytenant_id
+        </sql>
+
+</mapper>

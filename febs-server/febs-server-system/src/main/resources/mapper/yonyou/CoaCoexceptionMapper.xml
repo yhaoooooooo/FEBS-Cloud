@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaCoexceptionMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaCoexception">
+                    <id column="id" property="id" />
+                    <result column="allocplan" property="allocplan" />
+                    <result column="allocrule" property="allocrule" />
+                    <result column="parentAllocrule" property="parentallocrule" />
+                    <result column="syear" property="syear" />
+                    <result column="speriod" property="speriod" />
+                    <result column="exetype" property="exetype" />
+                    <result column="exception" property="exception" />
+                    <result column="exeuser" property="exeuser" />
+                    <result column="exedatetime" property="exedatetime" />
+                    <result column="batchno" property="batchno" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            allocplan, allocrule, parentAllocrule, syear, speriod, exetype, exception, exeuser, exedatetime, batchno, tenantid, srctplid, id, ytenant_id
+        </sql>
+
+</mapper>

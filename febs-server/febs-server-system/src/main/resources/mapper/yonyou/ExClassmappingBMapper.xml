@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ExClassmappingBMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ExClassmappingB">
+                    <id column="id" property="id" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="creator" property="creator" />
+                    <result column="description" property="description" />
+                    <result column="dr" property="dr" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="ts" property="ts" />
+                    <result column="classvalue1" property="classvalue1" />
+                    <result column="classvalue10" property="classvalue10" />
+                    <result column="classvalue11" property="classvalue11" />
+                    <result column="classvalue12" property="classvalue12" />
+                    <result column="classvalue13" property="classvalue13" />
+                    <result column="classvalue14" property="classvalue14" />
+                    <result column="classvalue15" property="classvalue15" />
+                    <result column="classvalue16" property="classvalue16" />
+                    <result column="classvalue17" property="classvalue17" />
+                    <result column="classvalue18" property="classvalue18" />
+                    <result column="classvalue19" property="classvalue19" />
+                    <result column="classvalue2" property="classvalue2" />
+                    <result column="classvalue20" property="classvalue20" />
+                    <result column="classvalue3" property="classvalue3" />
+                    <result column="classvalue4" property="classvalue4" />
+                    <result column="classvalue5" property="classvalue5" />
+                    <result column="classvalue6" property="classvalue6" />
+                    <result column="classvalue7" property="classvalue7" />
+                    <result column="classvalue8" property="classvalue8" />
+                    <result column="classvalue9" property="classvalue9" />
+                    <result column="rownumber" property="rownumber" />
+                    <result column="targetvalue" property="targetvalue" />
+                    <result column="classmappingid" property="classmappingid" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, creationtime, creator, description, dr, modifiedtime, modifier, pk_group, pk_org, ts, classvalue1, classvalue10, classvalue11, classvalue12, classvalue13, classvalue14, classvalue15, classvalue16, classvalue17, classvalue18, classvalue19, classvalue2, classvalue20, classvalue3, classvalue4, classvalue5, classvalue6, classvalue7, classvalue8, classvalue9, rownumber, targetvalue, classmappingid, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

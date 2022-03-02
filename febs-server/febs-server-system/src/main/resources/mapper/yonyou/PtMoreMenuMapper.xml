@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.PtMoreMenuMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.PtMoreMenu">
+                    <id column="pk_more_menu" property="pkMoreMenu" />
+                    <result column="code" property="code" />
+                    <result column="name" property="name" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="url" property="url" />
+                    <result column="url_type" property="urlType" />
+                    <result column="icon" property="icon" />
+                    <result column="sort" property="sort" />
+                    <result column="tag" property="tag" />
+                    <result column="isenable" property="isenable" />
+                    <result column="system" property="system" />
+                    <result column="tenant" property="tenant" />
+                    <result column="ts" property="ts" />
+                    <result column="dr" property="dr" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            code, name, name2, name3, name4, name5, name6, url, url_type, icon, sort, tag, pk_more_menu, isenable, system, tenant, ts, dr, ytenant_id
+        </sql>
+
+</mapper>

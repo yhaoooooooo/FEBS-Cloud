@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiVoucherflowMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiVoucherflow">
+                    <id column="id" property="id" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="creator" property="creator" />
+                    <result column="description" property="description" />
+                    <result column="dr" property="dr" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="ts" property="ts" />
+                    <result column="accbook" property="accbook" />
+                    <result column="accsubject" property="accsubject" />
+                    <result column="auxiliary" property="auxiliary" />
+                    <result column="accbody" property="accbody" />
+                    <result column="creditamount" property="creditamount" />
+                    <result column="creditquantity" property="creditquantity" />
+                    <result column="currency" property="currency" />
+                    <result column="debitamount" property="debitamount" />
+                    <result column="debitquantity" property="debitquantity" />
+                    <result column="localcreditamount" property="localcreditamount" />
+                    <result column="localdebitamount" property="localdebitamount" />
+                    <result column="period" property="period" />
+                    <result column="sessionid" property="sessionid" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="periodadjust" property="periodadjust" />
+                    <result column="secondorg" property="secondorg" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, creationtime, creator, description, dr, modifiedtime, modifier, pk_group, pk_org, ts, accbook, accsubject, auxiliary, accbody, creditamount, creditquantity, currency, debitamount, debitquantity, localcreditamount, localdebitamount, period, sessionid, tenantid, srctplid, periodadjust, secondorg, ytenant_id
+        </sql>
+
+</mapper>

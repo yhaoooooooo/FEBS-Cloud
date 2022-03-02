@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaCodynbilldetailMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaCodynbilldetail">
+                    <id column="id" property="id" />
+                    <result column="attr01" property="attr01" />
+                    <result column="attr02" property="attr02" />
+                    <result column="attr03" property="attr03" />
+                    <result column="attr04" property="attr04" />
+                    <result column="attr05" property="attr05" />
+                    <result column="attr06" property="attr06" />
+                    <result column="attr07" property="attr07" />
+                    <result column="attr08" property="attr08" />
+                    <result column="attr09" property="attr09" />
+                    <result column="attr10" property="attr10" />
+                    <result column="attr11" property="attr11" />
+                    <result column="attr12" property="attr12" />
+                    <result column="attr13" property="attr13" />
+                    <result column="attr14" property="attr14" />
+                    <result column="attr15" property="attr15" />
+                    <result column="attr16" property="attr16" />
+                    <result column="attr17" property="attr17" />
+                    <result column="attr18" property="attr18" />
+                    <result column="attr19" property="attr19" />
+                    <result column="attr20" property="attr20" />
+                    <result column="codynbill" property="codynbill" />
+                    <result column="rate" property="rate" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ratesum" property="ratesum" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, attr01, attr02, attr03, attr04, attr05, attr06, attr07, attr08, attr09, attr10, attr11, attr12, attr13, attr14, attr15, attr16, attr17, attr18, attr19, attr20, codynbill, rate, tenantid, srctplid, ratesum, ytenant_id
+        </sql>
+
+</mapper>

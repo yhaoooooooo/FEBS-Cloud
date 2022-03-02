@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaAllocruleMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaAllocrule">
+                    <id column="id" property="id" />
+                    <result column="allocplan" property="allocplan" />
+                    <result column="undertaketasks" property="undertaketasks" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+                    <result column="execorder" property="execorder" />
+                    <result column="status" property="status" />
+                    <result column="supertask" property="supertask" />
+                    <result column="remark" property="remark" />
+                    <result column="remark2" property="remark2" />
+                    <result column="remark3" property="remark3" />
+                    <result column="remark4" property="remark4" />
+                    <result column="remark5" property="remark5" />
+                    <result column="remark6" property="remark6" />
+                    <result column="rulestatus" property="rulestatus" />
+                    <result column="noscheexec" property="noscheexec" />
+                    <result column="accentity" property="accentity" />
+                    <result column="datasrctype" property="datasrctype" />
+                    <result column="rulelevel" property="rulelevel" />
+                    <result column="coatype" property="coatype" />
+                    <result column="code" property="code" />
+                    <result column="name" property="name" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="parentid" property="parentid" />
+                    <result column="classifyid" property="classifyid" />
+                    <result column="enable" property="enable" />
+                    <result column="def1" property="def1" />
+                    <result column="def2" property="def2" />
+                    <result column="def3" property="def3" />
+                    <result column="def4" property="def4" />
+                    <result column="def5" property="def5" />
+                    <result column="def6" property="def6" />
+                    <result column="def7" property="def7" />
+                    <result column="def8" property="def8" />
+                    <result column="def9" property="def9" />
+                    <result column="def10" property="def10" />
+                    <result column="def11" property="def11" />
+                    <result column="def12" property="def12" />
+                    <result column="def13" property="def13" />
+                    <result column="def14" property="def14" />
+                    <result column="def15" property="def15" />
+                    <result column="def16" property="def16" />
+                    <result column="def17" property="def17" />
+                    <result column="def18" property="def18" />
+                    <result column="def19" property="def19" />
+                    <result column="def20" property="def20" />
+                    <result column="def21" property="def21" />
+                    <result column="def22" property="def22" />
+                    <result column="def23" property="def23" />
+                    <result column="def24" property="def24" />
+                    <result column="def25" property="def25" />
+                    <result column="def26" property="def26" />
+                    <result column="def27" property="def27" />
+                    <result column="def28" property="def28" />
+                    <result column="def29" property="def29" />
+                    <result column="def30" property="def30" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="creator" property="creator" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="description" property="description" />
+                    <result column="ts" property="ts" />
+                    <result column="dr" property="dr" />
+                    <result column="undertakehangbilldata" property="undertakehangbilldata" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            allocplan, undertaketasks, execorder, status, supertask, remark, remark2, remark3, remark4, remark5, remark6, rulestatus, noscheexec, accentity, datasrctype, rulelevel, coatype, code, name, name2, name3, name4, name5, name6, parentid, classifyid, enable, def1, def2, def3, def4, def5, def6, def7, def8, def9, def10, def11, def12, def13, def14, def15, def16, def17, def18, def19, def20, def21, def22, def23, def24, def25, def26, def27, def28, def29, def30, tenantid, srctplid, creator, creationtime, modifier, modifiedtime, pk_org, pk_group, description, ts, dr, id, undertakehangbilldata, ytenant_id
+        </sql>
+
+</mapper>

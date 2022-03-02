@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.PubQueryconditionMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.PubQuerycondition">
+                    <id column="id" property="id" />
+                    <result column="componenttype" property="componenttype" />
+                    <result column="datatype" property="datatype" />
+                    <result column="default_value" property="defaultValue" />
+                    <result column="digit" property="digit" />
+                    <result column="disp_sequence" property="dispSequence" />
+                    <result column="field_code" property="fieldCode" />
+                    <result column="field_name" property="fieldName" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="opera_code" property="operaCode" />
+                    <result column="opera_name" property="operaName" />
+                    <result column="opera_name2" property="operaName2" />
+                    <result column="opera_name3" property="operaName3" />
+                    <result column="opera_name4" property="operaName4" />
+                    <result column="opera_name5" property="operaName5" />
+                    <result column="opera_name6" property="operaName6" />
+                    <result column="refEntityCode" property="refentitycode" />
+                    <result column="templetId" property="templetid" />
+                    <result column="ismust" property="ismust" />
+                    <result column="isshow" property="isshow" />
+                    <result column="LENGTH" property="length" />
+                    <result column="groupinfo" property="groupinfo" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, componenttype, datatype, default_value, digit, disp_sequence, field_code, field_name, name2, name3, name4, name5, name6, opera_code, opera_name, opera_name2, opera_name3, opera_name4, opera_name5, opera_name6, refEntityCode, templetId, ismust, isshow, LENGTH, groupinfo, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

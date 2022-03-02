@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiVouchernoMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiVoucherno">
+                    <id column="id" property="id" />
+                    <result column="beginno" property="beginno" />
+                    <result column="endno" property="endno" />
+                    <result column="month" property="month" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="vouchertype" property="vouchertype" />
+                    <result column="year" property="year" />
+                    <result column="costumdimension" property="costumdimension" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, beginno, endno, month, pk_org, vouchertype, year, costumdimension, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaDynreceiveruleMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaDynreceiverule">
+                    <id column="id" property="id" />
+                    <result column="allocrule" property="allocrule" />
+                    <result column="factorasoa" property="factorasoa" />
+                    <result column="accattrs" property="accattrs" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+                    <result column="assignasoa" property="assignasoa" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ruletype" property="ruletype" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            allocrule, factorasoa, accattrs, assignasoa, tenantid, srctplid, id, ruletype, ytenant_id
+        </sql>
+
+</mapper>

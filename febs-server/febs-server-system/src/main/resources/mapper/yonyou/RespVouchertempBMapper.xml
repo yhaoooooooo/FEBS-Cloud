@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.RespVouchertempBMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.RespVouchertempB">
+                    <id column="id" property="id" />
+                    <result column="recordnumber" property="recordnumber" />
+                    <result column="description" property="description" />
+                    <result column="description2" property="description2" />
+                    <result column="description3" property="description3" />
+                    <result column="description4" property="description4" />
+                    <result column="description5" property="description5" />
+                    <result column="description6" property="description6" />
+                    <result column="costcenter" property="costcenter" />
+                    <result column="accsubject" property="accsubject" />
+                    <result column="auxiliary" property="auxiliary" />
+                    <result column="credit_quantity" property="creditQuantity" />
+                    <result column="debit_quantity" property="debitQuantity" />
+                    <result column="price" property="price" />
+                    <result column="currency" property="currency" />
+                    <result column="credit_global" property="creditGlobal" />
+                    <result column="credit_org" property="creditOrg" />
+                    <result column="credit_original" property="creditOriginal" />
+                    <result column="debit_global" property="debitGlobal" />
+                    <result column="debit_org" property="debitOrg" />
+                    <result column="debit_original" property="debitOriginal" />
+                    <result column="rate_org" property="rateOrg" />
+                    <result column="rate_org_op" property="rateOrgOp" />
+                    <result column="voucherid" property="voucherid" />
+                    <result column="secondorg" property="secondorg" />
+                    <result column="secondorg_v" property="secondorgV" />
+                    <result column="accbook" property="accbook" />
+                    <result column="period" property="period" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="creator" property="creator" />
+                    <result column="dr" property="dr" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="ts" property="ts" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="quantity" property="quantity" />
+                    <result column="coavbid" property="coavbid" />
+                    <result column="coa_planid" property="coaPlanid" />
+                    <result column="coa_type" property="coaType" />
+                    <result column="rate_date" property="rateDate" />
+                    <result column="rate_class" property="rateClass" />
+                    <result column="modify_rule" property="modifyRule" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, recordnumber, description, description2, description3, description4, description5, description6, costcenter, accsubject, auxiliary, credit_quantity, debit_quantity, price, currency, credit_global, credit_org, credit_original, debit_global, debit_org, debit_original, rate_org, rate_org_op, voucherid, secondorg, secondorg_v, accbook, period, creationtime, creator, dr, modifiedtime, modifier, pk_group, pk_org, ts, tenantid, srctplid, quantity, coavbid, coa_planid, coa_type, rate_date, rate_class, modify_rule, ytenant_id
+        </sql>
+
+</mapper>

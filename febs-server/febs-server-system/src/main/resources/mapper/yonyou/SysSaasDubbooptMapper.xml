@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.SysSaasDubbooptMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.SysSaasDubboopt">
+                    <id column="id" property="id" />
+                    <result column="bizkey" property="bizkey" />
+                    <result column="bizstatus" property="bizstatus" />
+                    <result column="biztime" property="biztime" />
+                    <result column="biztype" property="biztype" />
+                    <result column="callid" property="callid" />
+                    <result column="classname" property="classname" />
+                    <result column="description" property="description" />
+                    <result column="dubbostatus" property="dubbostatus" />
+                    <result column="methodname" property="methodname" />
+                    <result column="params" property="params" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+                    <result column="restatus" property="restatus" />
+                    <result column="result" property="result" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+                    <result column="rollcount" property="rollcount" />
+                    <result column="rollmsg" property="rollmsg" />
+                    <result column="rollstatus" property="rollstatus" />
+                    <result column="tag" property="tag" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="ts" property="ts" />
+                    <result column="usercode" property="usercode" />
+                    <result column="userid" property="userid" />
+                    <result column="isnotice" property="isnotice" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, bizkey, bizstatus, biztime, biztype, callid, classname, description, dubbostatus, methodname, params, restatus, result, rollcount, rollmsg, rollstatus, tag, tenantid, ts, usercode, userid, isnotice, srctplid, ytenant_id
+        </sql>
+
+</mapper>

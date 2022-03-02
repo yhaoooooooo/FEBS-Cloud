@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.MdEntityMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.MdEntity">
+                    <id column="id" property="id" />
+                    <result column="accessorClass" property="accessorclass" />
+                    <result column="displayName" property="displayname" />
+                    <result column="displayName2" property="displayname2" />
+                    <result column="displayName3" property="displayname3" />
+                    <result column="displayName4" property="displayname4" />
+                    <result column="displayName5" property="displayname5" />
+                    <result column="displayName6" property="displayname6" />
+                    <result column="entityName" property="entityname" />
+                    <result column="entityType" property="entitytype" />
+                    <result column="fullClassName" property="fullclassname" />
+                    <result column="mainTableName" property="maintablename" />
+                    <result column="isinner" property="isinner" />
+                    <result column="srcsystem" property="srcsystem" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, accessorClass, displayName, displayName2, displayName3, displayName4, displayName5, displayName6, entityName, entityType, fullClassName, mainTableName, isinner, srcsystem, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

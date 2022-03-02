@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaRulecodynfacMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaRulecodynfac">
+                    <id column="id" property="id" />
+                    <result column="allocrule" property="allocrule" />
+                    <result column="periodtype" property="periodtype" />
+                    <result column="offsetattr" property="offsetattr" />
+                    <result column="accattrs" property="accattrs" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+                    <result column="conditionattr" property="conditionattr" />
+                    <result column="conditiondesc" property="conditiondesc" />
+                    <result column="fixedperiod" property="fixedperiod" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="dyAuxiliarys" property="dyauxiliarys" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+                    <result column="dynPeriod" property="dynperiod" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            allocrule, periodtype, offsetattr, accattrs, conditionattr, conditiondesc, fixedperiod, tenantid, srctplid, id, dyAuxiliarys, dynPeriod, ytenant_id
+        </sql>
+
+</mapper>

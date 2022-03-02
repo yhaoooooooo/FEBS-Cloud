@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.PubBillgroupMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.PubBillgroup">
+                    <id column="id" property="id" />
+                    <result column="billtemplet" property="billtemplet" />
+                    <result column="billtable" property="billtable" />
+                    <result column="name" property="name" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="position" property="position" />
+                    <result column="showtype" property="showtype" />
+                    <result column="showorder" property="showorder" />
+                    <result column="readonly" property="readonly" />
+                    <result column="showgroupname" property="showgroupname" />
+                    <result column="validateformula" property="validateformula" />
+                    <result column="validatefrontformula" property="validatefrontformula" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, billtemplet, billtable, name, name2, name3, name4, name5, name6, position, showtype, showorder, readonly, showgroupname, validateformula, validatefrontformula, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

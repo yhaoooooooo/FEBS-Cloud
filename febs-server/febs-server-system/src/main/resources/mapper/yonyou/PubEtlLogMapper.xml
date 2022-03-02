@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.PubEtlLogMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.PubEtlLog">
+                    <id column="pk_job" property="pkJob" />
+                    <result column="job_name" property="jobName" />
+                    <result column="etl_date" property="etlDate" />
+                    <result column="etl_status" property="etlStatus" />
+                    <result column="etl_starttime" property="etlStarttime" />
+                    <result column="etl_endtime" property="etlEndtime" />
+                    <result column="etl_timenum" property="etlTimenum" />
+                    <result column="etl_desc" property="etlDesc" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            pk_job, job_name, etl_date, etl_status, etl_starttime, etl_endtime, etl_timenum, etl_desc
+        </sql>
+
+</mapper>

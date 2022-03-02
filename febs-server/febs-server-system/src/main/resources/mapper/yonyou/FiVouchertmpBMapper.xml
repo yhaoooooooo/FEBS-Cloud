@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiVouchertmpBMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiVouchertmpB">
+                    <id column="id" property="id" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="creator" property="creator" />
+                    <result column="description" property="description" />
+                    <result column="dr" property="dr" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="ts" property="ts" />
+                    <result column="accsubject" property="accsubject" />
+                    <result column="auxiliary" property="auxiliary" />
+                    <result column="credit_global" property="creditGlobal" />
+                    <result column="credit_group" property="creditGroup" />
+                    <result column="credit_org" property="creditOrg" />
+                    <result column="credit_original" property="creditOriginal" />
+                    <result column="credit_quantity" property="creditQuantity" />
+                    <result column="currency" property="currency" />
+                    <result column="debit_global" property="debitGlobal" />
+                    <result column="debit_group" property="debitGroup" />
+                    <result column="debit_org" property="debitOrg" />
+                    <result column="debit_original" property="debitOriginal" />
+                    <result column="debit_quantity" property="debitQuantity" />
+                    <result column="price" property="price" />
+                    <result column="rate_global" property="rateGlobal" />
+                    <result column="rate_group" property="rateGroup" />
+                    <result column="rate_org" property="rateOrg" />
+                    <result column="rate_org_op" property="rateOrgOp" />
+                    <result column="recordnumber" property="recordnumber" />
+                    <result column="voucherid" property="voucherid" />
+                    <result column="flag" property="flag" />
+                    <result column="busidate" property="busidate" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="modify_rule" property="modifyRule" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+                    <result column="secondorg" property="secondorg" />
+                    <result column="ratetype" property="ratetype" />
+                    <result column="settlementmode" property="settlementmode" />
+                    <result column="billtime" property="billtime" />
+                    <result column="billno" property="billno" />
+                    <result column="bankverifycode" property="bankverifycode" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, creationtime, creator, description, dr, modifiedtime, modifier, pk_group, pk_org, ts, accsubject, auxiliary, credit_global, credit_group, credit_org, credit_original, credit_quantity, currency, debit_global, debit_group, debit_org, debit_original, debit_quantity, price, rate_global, rate_group, rate_org, rate_org_op, recordnumber, voucherid, flag, busidate, tenantid, srctplid, modify_rule, secondorg, ratetype, settlementmode, billtime, billno, bankverifycode, ytenant_id
+        </sql>
+
+</mapper>

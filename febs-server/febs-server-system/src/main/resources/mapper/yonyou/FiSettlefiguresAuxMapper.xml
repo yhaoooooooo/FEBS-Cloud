@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiSettlefiguresAuxMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiSettlefiguresAux">
+                    <id column="id" property="id" />
+                    <result column="accsubject" property="accsubject" />
+                    <result column="dimension" property="dimension" />
+                    <result column="vrs" property="vrs" />
+                    <result column="auxvalue" property="auxvalue" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="figures" property="figures" />
+                    <result column="accbook" property="accbook" />
+                    <result column="period" property="period" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, accsubject, dimension, vrs, auxvalue, tenantid, srctplid, figures, accbook, period, ytenant_id
+        </sql>
+
+</mapper>

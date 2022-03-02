@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.WbUserLayoutperfMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.WbUserLayoutperf">
+                    <id column="id" property="id" />
+                    <result column="userid" property="userid" />
+                    <result column="roleid" property="roleid" />
+                    <result column="viewid" property="viewid" />
+                    <result column="createtime" property="createtime" />
+                    <result column="defaultview" property="defaultview" />
+                    <result column="rolelayoutrefid" property="rolelayoutrefid" />
+                    <result column="tenant_id" property="tenantId" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, userid, roleid, viewid, createtime, defaultview, rolelayoutrefid, tenant_id, ytenant_id
+        </sql>
+
+</mapper>

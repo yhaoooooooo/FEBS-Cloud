@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ReportModelDimMappingMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ReportModelDimMapping">
+                    <id column="id" property="id" />
+                    <result column="mapping_id" property="mappingId" />
+                    <result column="src_dim" property="srcDim" />
+                    <result column="target_dim" property="targetDim" />
+                    <result column="src_value" property="srcValue" />
+                    <result column="target_value" property="targetValue" />
+                    <result column="operation" property="operation" />
+                    <result column="ts" property="ts" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, mapping_id, src_dim, target_dim, src_value, target_value, operation, ts, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

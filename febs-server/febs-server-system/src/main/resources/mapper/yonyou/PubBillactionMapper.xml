@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.PubBillactionMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.PubBillaction">
+                    <id column="id" property="id" />
+                    <result column="code" property="code" />
+                    <result column="enable" property="enable" />
+                    <result column="icon" property="icon" />
+                    <result column="name" property="name" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="needparams" property="needparams" />
+                    <result column="url" property="url" />
+                    <result column="urltype" property="urltype" />
+                    <result column="tooltip" property="tooltip" />
+                    <result column="beforeaction" property="beforeaction" />
+                    <result column="afteraction" property="afteraction" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, code, enable, icon, name, name2, name3, name4, name5, name6, needparams, url, urltype, tooltip, beforeaction, afteraction, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

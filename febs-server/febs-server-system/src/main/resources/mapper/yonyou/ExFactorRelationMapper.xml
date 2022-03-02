@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ExFactorRelationMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ExFactorRelation">
+                    <id column="id" property="id" />
+                    <result column="outer_system_id" property="outerSystemId" />
+                    <result column="bill_type_id" property="billTypeId" />
+                    <result column="trade_type_id" property="tradeTypeId" />
+                    <result column="src_entity_id" property="srcEntityId" />
+                    <result column="factor_id" property="factorId" />
+                    <result column="bill_field_id0" property="billFieldId0" />
+                    <result column="bill_field_id1" property="billFieldId1" />
+                    <result column="bill_field_id2" property="billFieldId2" />
+                    <result column="bill_field_id3" property="billFieldId3" />
+                    <result column="bill_field_id4" property="billFieldId4" />
+                    <result column="bill_field_id5" property="billFieldId5" />
+                    <result column="bill_field_attr_name" property="billFieldAttrName" />
+                    <result column="permission" property="permission" />
+                    <result column="issocial" property="issocial" />
+                    <result column="unique_key" property="uniqueKey" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="create_time" property="createTime" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, outer_system_id, bill_type_id, trade_type_id, src_entity_id, factor_id, bill_field_id0, bill_field_id1, bill_field_id2, bill_field_id3, bill_field_id4, bill_field_id5, bill_field_attr_name, permission, issocial, unique_key, tenantid, srctplid, create_time, ytenant_id
+        </sql>
+
+</mapper>

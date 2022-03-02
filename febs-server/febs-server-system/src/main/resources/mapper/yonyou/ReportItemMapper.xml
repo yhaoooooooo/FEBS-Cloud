@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ReportItemMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ReportItem">
+                    <id column="id" property="id" />
+                    <result column="pid" property="pid" />
+                    <result column="code" property="code" />
+                    <result column="aggregation" property="aggregation" />
+                    <result column="aggregation_weight" property="aggregationWeight" />
+                    <result column="level" property="level" />
+                    <result column="is_leaf" property="isLeaf" />
+                    <result column="rpt_item_id" property="rptItemId" />
+                    <result column="model_id" property="modelId" />
+                    <result column="sort" property="sort" />
+                    <result column="ts" property="ts" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, pid, code, aggregation, aggregation_weight, level, is_leaf, rpt_item_id, model_id, sort, ts, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

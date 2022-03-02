@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CfCashflowMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CfCashflow">
+                    <id column="id" property="id" />
+                    <result column="accbook" property="accbook" />
+                    <result column="period" property="period" />
+                    <result column="voucher" property="voucher" />
+                    <result column="cashflowitem" property="cashflowitem" />
+                    <result column="direction" property="direction" />
+                    <result column="accsubject" property="accsubject" />
+                    <result column="oppsubject" property="oppsubject" />
+                    <result column="currency" property="currency" />
+                    <result column="amountoriginal" property="amountoriginal" />
+                    <result column="amountorg" property="amountorg" />
+                    <result column="manual" property="manual" />
+                    <result column="rule" property="rule" />
+                    <result column="voucherrecord" property="voucherrecord" />
+                    <result column="description" property="description" />
+                    <result column="ts" property="ts" />
+                    <result column="creator" property="creator" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="name" property="name" />
+                    <result column="dr" property="dr" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="version" property="version" />
+                    <result column="voucherbillcode" property="voucherbillcode" />
+                    <result column="vouchermaketime" property="vouchermaketime" />
+                    <result column="vouchertype" property="vouchertype" />
+                    <result column="voucherdescription" property="voucherdescription" />
+                    <result column="def2" property="def2" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="flag" property="flag" />
+                    <result column="voucherrecordnumber" property="voucherrecordnumber" />
+                    <result column="periodadjust" property="periodadjust" />
+                    <result column="periodunion" property="periodunion" />
+                    <result column="innerorg" property="innerorg" />
+                    <result column="voucherstatus" property="voucherstatus" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, accbook, period, voucher, cashflowitem, direction, accsubject, oppsubject, currency, amountoriginal, amountorg, manual, rule, voucherrecord, description, ts, creator, creationtime, modifier, modifiedtime, name, dr, pk_group, pk_org, version, voucherbillcode, vouchermaketime, vouchertype, voucherdescription, def2, tenantid, srctplid, flag, voucherrecordnumber, periodadjust, periodunion, innerorg, voucherstatus, ytenant_id
+        </sql>
+
+</mapper>

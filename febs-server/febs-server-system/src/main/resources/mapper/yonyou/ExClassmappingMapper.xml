@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ExClassmappingMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ExClassmapping">
+                    <id column="id" property="id" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="creator" property="creator" />
+                    <result column="description" property="description" />
+                    <result column="dr" property="dr" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="ts" property="ts" />
+                    <result column="classifyid" property="classifyid" />
+                    <result column="code" property="code" />
+                    <result column="def1" property="def1" />
+                    <result column="def10" property="def10" />
+                    <result column="def11" property="def11" />
+                    <result column="def12" property="def12" />
+                    <result column="def13" property="def13" />
+                    <result column="def14" property="def14" />
+                    <result column="def15" property="def15" />
+                    <result column="def16" property="def16" />
+                    <result column="def17" property="def17" />
+                    <result column="def18" property="def18" />
+                    <result column="def19" property="def19" />
+                    <result column="def2" property="def2" />
+                    <result column="def20" property="def20" />
+                    <result column="def21" property="def21" />
+                    <result column="def22" property="def22" />
+                    <result column="def23" property="def23" />
+                    <result column="def24" property="def24" />
+                    <result column="def25" property="def25" />
+                    <result column="def26" property="def26" />
+                    <result column="def27" property="def27" />
+                    <result column="def28" property="def28" />
+                    <result column="def29" property="def29" />
+                    <result column="def3" property="def3" />
+                    <result column="def30" property="def30" />
+                    <result column="def4" property="def4" />
+                    <result column="def5" property="def5" />
+                    <result column="def6" property="def6" />
+                    <result column="def7" property="def7" />
+                    <result column="def8" property="def8" />
+                    <result column="def9" property="def9" />
+                    <result column="enable" property="enable" />
+                    <result column="name" property="name" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="parentid" property="parentid" />
+                    <result column="classtype1" property="classtype1" />
+                    <result column="classtype10" property="classtype10" />
+                    <result column="classtype11" property="classtype11" />
+                    <result column="classtype12" property="classtype12" />
+                    <result column="classtype13" property="classtype13" />
+                    <result column="classtype14" property="classtype14" />
+                    <result column="classtype15" property="classtype15" />
+                    <result column="classtype16" property="classtype16" />
+                    <result column="classtype17" property="classtype17" />
+                    <result column="classtype18" property="classtype18" />
+                    <result column="classtype19" property="classtype19" />
+                    <result column="classtype2" property="classtype2" />
+                    <result column="classtype20" property="classtype20" />
+                    <result column="classtype3" property="classtype3" />
+                    <result column="classtype4" property="classtype4" />
+                    <result column="classtype5" property="classtype5" />
+                    <result column="classtype6" property="classtype6" />
+                    <result column="classtype7" property="classtype7" />
+                    <result column="classtype8" property="classtype8" />
+                    <result column="classtype9" property="classtype9" />
+                    <result column="targettype" property="targettype" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="accbookid" property="accbookid" />
+                    <result column="globalid" property="globalid" />
+                    <result column="version" property="version" />
+                    <result column="accsubjectchart" property="accsubjectchart" />
+                    <result column="defaultaccsubject" property="defaultaccsubject" />
+                    <result column="targetvouchertype" property="targetvouchertype" />
+                    <result column="accpurposes" property="accpurposes" />
+                    <result column="permission" property="permission" />
+                    <result column="issocial" property="issocial" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, creationtime, creator, description, dr, modifiedtime, modifier, pk_group, pk_org, ts, classifyid, code, def1, def10, def11, def12, def13, def14, def15, def16, def17, def18, def19, def2, def20, def21, def22, def23, def24, def25, def26, def27, def28, def29, def3, def30, def4, def5, def6, def7, def8, def9, enable, name, name2, name3, name4, name5, name6, parentid, classtype1, classtype10, classtype11, classtype12, classtype13, classtype14, classtype15, classtype16, classtype17, classtype18, classtype19, classtype2, classtype20, classtype3, classtype4, classtype5, classtype6, classtype7, classtype8, classtype9, targettype, tenantid, srctplid, accbookid, globalid, version, accsubjectchart, defaultaccsubject, targetvouchertype, accpurposes, permission, issocial, ytenant_id
+        </sql>
+
+</mapper>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiEtlEntitytreeMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiEtlEntitytree">
+                    <id column="id" property="id" />
+                    <result column="entitycode" property="entitycode" />
+                    <result column="entityname" property="entityname" />
+                    <result column="entityname2" property="entityname2" />
+                    <result column="entityname3" property="entityname3" />
+                    <result column="entityname4" property="entityname4" />
+                    <result column="entityname5" property="entityname5" />
+                    <result column="entityname6" property="entityname6" />
+                    <result column="parentid" property="parentid" />
+                    <result column="mdentityid" property="mdentityid" />
+                    <result column="dr" property="dr" />
+                    <result column="ts" property="ts" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="sort" property="sort" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="isLeaf" property="isleaf" />
+                    <result column="rootid" property="rootid" />
+                    <result column="systype" property="systype" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, entitycode, entityname, entityname2, entityname3, entityname4, entityname5, entityname6, parentid, mdentityid, dr, ts, tenantid, sort, srctplid, isLeaf, rootid, systype, ytenant_id
+        </sql>
+
+</mapper>

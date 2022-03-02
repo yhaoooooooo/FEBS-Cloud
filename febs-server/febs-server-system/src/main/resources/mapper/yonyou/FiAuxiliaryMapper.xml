@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiAuxiliaryMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiAuxiliary">
+                    <id column="id" property="id" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="creator" property="creator" />
+                    <result column="description" property="description" />
+                    <result column="dr" property="dr" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="ts" property="ts" />
+                    <result column="def1" property="def1" />
+                    <result column="def10" property="def10" />
+                    <result column="def11" property="def11" />
+                    <result column="def12" property="def12" />
+                    <result column="def13" property="def13" />
+                    <result column="def14" property="def14" />
+                    <result column="def15" property="def15" />
+                    <result column="def16" property="def16" />
+                    <result column="def17" property="def17" />
+                    <result column="def18" property="def18" />
+                    <result column="def19" property="def19" />
+                    <result column="def2" property="def2" />
+                    <result column="def20" property="def20" />
+                    <result column="def21" property="def21" />
+                    <result column="def22" property="def22" />
+                    <result column="def23" property="def23" />
+                    <result column="def24" property="def24" />
+                    <result column="def25" property="def25" />
+                    <result column="def26" property="def26" />
+                    <result column="def27" property="def27" />
+                    <result column="def28" property="def28" />
+                    <result column="def29" property="def29" />
+                    <result column="def3" property="def3" />
+                    <result column="def30" property="def30" />
+                    <result column="def4" property="def4" />
+                    <result column="def5" property="def5" />
+                    <result column="def6" property="def6" />
+                    <result column="def7" property="def7" />
+                    <result column="def8" property="def8" />
+                    <result column="def9" property="def9" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="def31" property="def31" />
+                    <result column="def32" property="def32" />
+                    <result column="def33" property="def33" />
+                    <result column="def34" property="def34" />
+                    <result column="def35" property="def35" />
+                    <result column="def36" property="def36" />
+                    <result column="def37" property="def37" />
+                    <result column="def38" property="def38" />
+                    <result column="def39" property="def39" />
+                    <result column="def40" property="def40" />
+                    <result column="def41" property="def41" />
+                    <result column="def42" property="def42" />
+                    <result column="def43" property="def43" />
+                    <result column="def44" property="def44" />
+                    <result column="def45" property="def45" />
+                    <result column="def46" property="def46" />
+                    <result column="def47" property="def47" />
+                    <result column="def48" property="def48" />
+                    <result column="def49" property="def49" />
+                    <result column="def50" property="def50" />
+                    <result column="def51" property="def51" />
+                    <result column="def52" property="def52" />
+                    <result column="def53" property="def53" />
+                    <result column="def54" property="def54" />
+                    <result column="def55" property="def55" />
+                    <result column="def56" property="def56" />
+                    <result column="def57" property="def57" />
+                    <result column="def58" property="def58" />
+                    <result column="def59" property="def59" />
+                    <result column="def60" property="def60" />
+                    <result column="def61" property="def61" />
+                    <result column="def62" property="def62" />
+                    <result column="def63" property="def63" />
+                    <result column="def64" property="def64" />
+                    <result column="def65" property="def65" />
+                    <result column="def66" property="def66" />
+                    <result column="def67" property="def67" />
+                    <result column="def68" property="def68" />
+                    <result column="def69" property="def69" />
+                    <result column="def70" property="def70" />
+                    <result column="def71" property="def71" />
+                    <result column="def72" property="def72" />
+                    <result column="def73" property="def73" />
+                    <result column="def74" property="def74" />
+                    <result column="def75" property="def75" />
+                    <result column="def76" property="def76" />
+                    <result column="def77" property="def77" />
+                    <result column="def78" property="def78" />
+                    <result column="def79" property="def79" />
+                    <result column="def80" property="def80" />
+                    <result column="def81" property="def81" />
+                    <result column="def82" property="def82" />
+                    <result column="def83" property="def83" />
+                    <result column="def84" property="def84" />
+                    <result column="def85" property="def85" />
+                    <result column="def86" property="def86" />
+                    <result column="def87" property="def87" />
+                    <result column="def88" property="def88" />
+                    <result column="def89" property="def89" />
+                    <result column="def90" property="def90" />
+                    <result column="def91" property="def91" />
+                    <result column="def92" property="def92" />
+                    <result column="def93" property="def93" />
+                    <result column="def94" property="def94" />
+                    <result column="def95" property="def95" />
+                    <result column="def96" property="def96" />
+                    <result column="def97" property="def97" />
+                    <result column="def98" property="def98" />
+                    <result column="def99" property="def99" />
+                    <result column="def100" property="def100" />
+                    <result column="accbook" property="accbook" />
+                    <result column="period" property="period" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, creationtime, creator, description, dr, modifiedtime, modifier, pk_group, pk_org, ts, def1, def10, def11, def12, def13, def14, def15, def16, def17, def18, def19, def2, def20, def21, def22, def23, def24, def25, def26, def27, def28, def29, def3, def30, def4, def5, def6, def7, def8, def9, tenantid, srctplid, def31, def32, def33, def34, def35, def36, def37, def38, def39, def40, def41, def42, def43, def44, def45, def46, def47, def48, def49, def50, def51, def52, def53, def54, def55, def56, def57, def58, def59, def60, def61, def62, def63, def64, def65, def66, def67, def68, def69, def70, def71, def72, def73, def74, def75, def76, def77, def78, def79, def80, def81, def82, def83, def84, def85, def86, def87, def88, def89, def90, def91, def92, def93, def94, def95, def96, def97, def98, def99, def100, accbook, period, ytenant_id
+        </sql>
+
+</mapper>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ExMappingentityMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ExMappingentity">
+                    <id column="id" property="id" />
+                    <result column="copyproperties" property="copyproperties" />
+                    <result column="des_entityid" property="desEntityid" />
+                    <result column="des_path" property="desPath" />
+                    <result column="effector" property="effector" />
+                    <result column="mappingdefid" property="mappingdefid" />
+                    <result column="parentid" property="parentid" />
+                    <result column="rownumber" property="rownumber" />
+                    <result column="src_entityid" property="srcEntityid" />
+                    <result column="src_path" property="srcPath" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMapVo" type="com.yonyou.etl.vo.ExmappingEntityVo">
+        <id column="id" property="id" />
+        <result column="copyproperties" property="copyproperties" />
+        <result column="des_entityid" property="desEntityid" />
+        <result column="des_path" property="desPath" />
+        <result column="effector" property="effector" />
+        <result column="mappingdefid" property="mappingdefid" />
+        <result column="parentid" property="parentid" />
+        <result column="rownumber" property="rownumber" />
+        <result column="src_entityid" property="srcEntityid" />
+        <result column="src_path" property="srcPath" />
+        <result column="tenantid" property="tenantid" />
+        <result column="srctplid" property="srctplid" />
+        <result column="ytenant_id" property="ytenantId" />
+        <collection property="exMappingProperty" select="selectByEntityId" column="id"/>
+    </resultMap>
+
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, copyproperties, des_entityid, des_path, effector, mappingdefid, parentid, rownumber, src_entityid, src_path, tenantid, srctplid, ytenant_id
+        </sql>
+
+    <select id="selectByMappingDefId" resultMap="BaseResultMapVo" parameterType="string">
+        select <include refid="Base_Column_List"/> from ex_mappingentity where mappingdefid = #{value}
+    </select>
+</mapper>

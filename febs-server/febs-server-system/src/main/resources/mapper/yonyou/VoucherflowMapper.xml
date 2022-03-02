@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.VoucherflowMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.Voucherflow">
+                    <result column="sessionid" property="sessionid" />
+                    <result column="accbook" property="accbook" />
+                    <result column="accsubject" property="accsubject" />
+                    <result column="period" property="period" />
+                    <result column="auxiliary" property="auxiliary" />
+                    <result column="accbody" property="accbody" />
+                    <result column="currency" property="currency" />
+                    <result column="debitamount" property="debitamount" />
+                    <result column="localdebitamount" property="localdebitamount" />
+                    <result column="creditamount" property="creditamount" />
+                    <result column="localcreditamount" property="localcreditamount" />
+                    <result column="uflag" property="uflag" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="periodadjust" property="periodadjust" />
+                    <result column="secondorg" property="secondorg" />
+                    <result column="debitquantity" property="debitquantity" />
+                    <result column="creditquantity" property="creditquantity" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            sessionid, accbook, accsubject, period, auxiliary, accbody, currency, debitamount, localdebitamount, creditamount, localcreditamount, uflag, tenantid, srctplid, periodadjust, secondorg, debitquantity, creditquantity, ytenant_id
+        </sql>
+
+</mapper>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.BdMultidimensionMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.BdMultidimension">
+                    <id column="id" property="id" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="creator" property="creator" />
+                    <result column="description" property="description" />
+                    <result column="dr" property="dr" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="ts" property="ts" />
+                    <result column="classifyid" property="classifyid" />
+                    <result column="code" property="code" />
+                    <result column="def1" property="def1" />
+                    <result column="def10" property="def10" />
+                    <result column="def11" property="def11" />
+                    <result column="def12" property="def12" />
+                    <result column="def13" property="def13" />
+                    <result column="def14" property="def14" />
+                    <result column="def15" property="def15" />
+                    <result column="def16" property="def16" />
+                    <result column="def17" property="def17" />
+                    <result column="def18" property="def18" />
+                    <result column="def19" property="def19" />
+                    <result column="def2" property="def2" />
+                    <result column="def20" property="def20" />
+                    <result column="def21" property="def21" />
+                    <result column="def22" property="def22" />
+                    <result column="def23" property="def23" />
+                    <result column="def24" property="def24" />
+                    <result column="def25" property="def25" />
+                    <result column="def26" property="def26" />
+                    <result column="def27" property="def27" />
+                    <result column="def28" property="def28" />
+                    <result column="def29" property="def29" />
+                    <result column="def3" property="def3" />
+                    <result column="def30" property="def30" />
+                    <result column="def4" property="def4" />
+                    <result column="def5" property="def5" />
+                    <result column="def6" property="def6" />
+                    <result column="def7" property="def7" />
+                    <result column="def8" property="def8" />
+                    <result column="def9" property="def9" />
+                    <result column="enable" property="enable" />
+                    <result column="name" property="name" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="parentid" property="parentid" />
+                    <result column="vr1" property="vr1" />
+                    <result column="vr10" property="vr10" />
+                    <result column="vr11" property="vr11" />
+                    <result column="vr12" property="vr12" />
+                    <result column="vr13" property="vr13" />
+                    <result column="vr14" property="vr14" />
+                    <result column="vr15" property="vr15" />
+                    <result column="vr16" property="vr16" />
+                    <result column="vr17" property="vr17" />
+                    <result column="vr18" property="vr18" />
+                    <result column="vr19" property="vr19" />
+                    <result column="vr2" property="vr2" />
+                    <result column="vr20" property="vr20" />
+                    <result column="vr21" property="vr21" />
+                    <result column="vr22" property="vr22" />
+                    <result column="vr23" property="vr23" />
+                    <result column="vr24" property="vr24" />
+                    <result column="vr25" property="vr25" />
+                    <result column="vr26" property="vr26" />
+                    <result column="vr27" property="vr27" />
+                    <result column="vr28" property="vr28" />
+                    <result column="vr29" property="vr29" />
+                    <result column="vr3" property="vr3" />
+                    <result column="vr30" property="vr30" />
+                    <result column="vr4" property="vr4" />
+                    <result column="vr5" property="vr5" />
+                    <result column="vr6" property="vr6" />
+                    <result column="vr7" property="vr7" />
+                    <result column="vr8" property="vr8" />
+                    <result column="vr9" property="vr9" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="vr31" property="vr31" />
+                    <result column="vr32" property="vr32" />
+                    <result column="vr33" property="vr33" />
+                    <result column="vr34" property="vr34" />
+                    <result column="vr35" property="vr35" />
+                    <result column="vr36" property="vr36" />
+                    <result column="vr37" property="vr37" />
+                    <result column="vr38" property="vr38" />
+                    <result column="vr39" property="vr39" />
+                    <result column="vr40" property="vr40" />
+                    <result column="vr41" property="vr41" />
+                    <result column="vr42" property="vr42" />
+                    <result column="vr43" property="vr43" />
+                    <result column="vr44" property="vr44" />
+                    <result column="vr45" property="vr45" />
+                    <result column="vr46" property="vr46" />
+                    <result column="vr47" property="vr47" />
+                    <result column="vr48" property="vr48" />
+                    <result column="vr49" property="vr49" />
+                    <result column="vr50" property="vr50" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, creationtime, creator, description, dr, modifiedtime, modifier, pk_group, pk_org, ts, classifyid, code, def1, def10, def11, def12, def13, def14, def15, def16, def17, def18, def19, def2, def20, def21, def22, def23, def24, def25, def26, def27, def28, def29, def3, def30, def4, def5, def6, def7, def8, def9, enable, name, name2, name3, name4, name5, name6, parentid, vr1, vr10, vr11, vr12, vr13, vr14, vr15, vr16, vr17, vr18, vr19, vr2, vr20, vr21, vr22, vr23, vr24, vr25, vr26, vr27, vr28, vr29, vr3, vr30, vr4, vr5, vr6, vr7, vr8, vr9, tenantid, srctplid, vr31, vr32, vr33, vr34, vr35, vr36, vr37, vr38, vr39, vr40, vr41, vr42, vr43, vr44, vr45, vr46, vr47, vr48, vr49, vr50, ytenant_id
+        </sql>
+
+</mapper>

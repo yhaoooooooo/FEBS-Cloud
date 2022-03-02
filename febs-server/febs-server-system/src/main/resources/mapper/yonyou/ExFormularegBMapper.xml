@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ExFormularegBMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ExFormularegB">
+                    <id column="id" property="id" />
+                    <result column="code" property="code" />
+                    <result column="showvalue" property="showvalue" />
+                    <result column="mainid" property="mainid" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="isU8CShow" property="isu8cshow" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, code, showvalue, mainid, tenantid, srctplid, isU8CShow, ytenant_id
+        </sql>
+
+</mapper>

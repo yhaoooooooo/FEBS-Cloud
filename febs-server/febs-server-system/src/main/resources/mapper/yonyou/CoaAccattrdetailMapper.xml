@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaAccattrdetailMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaAccattrdetail">
+                    <id column="id" property="id" />
+                    <result column="accattr" property="accattr" />
+                    <result column="hasnumber" property="hasnumber" />
+                    <result column="valuetype" property="valuetype" />
+                    <result column="assignasoa" property="assignasoa" />
+                    <result column="rownumber" property="rownumber" />
+                    <result column="conditionArr" property="conditionarr" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+                    <result column="orderstart" property="orderstart" />
+                    <result column="orderend" property="orderend" />
+                    <result column="ordergroup" property="ordergroup" />
+                    <result column="costcenterstart" property="costcenterstart" />
+                    <result column="costcenterend" property="costcenterend" />
+                    <result column="costcentergroup" property="costcentergroup" />
+                    <result column="elementscopestart" property="elementscopestart" />
+                    <result column="elementscopeend" property="elementscopeend" />
+                    <result column="costelementtype" property="costelementtype" />
+                    <result column="costelement" property="costelement" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="dynreceiveruleid" property="dynreceiveruleid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            accattr, hasnumber, valuetype, assignasoa, rownumber, conditionArr, orderstart, orderend, ordergroup, costcenterstart, costcenterend, costcentergroup, elementscopestart, elementscopeend, costelementtype, costelement, tenantid, srctplid, dynreceiveruleid, id, ytenant_id
+        </sql>
+
+</mapper>

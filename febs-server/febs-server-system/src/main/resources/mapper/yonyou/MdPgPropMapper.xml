@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.MdPgPropMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.MdPgProp">
+                    <id column="id" property="id" />
+                    <result column="code" property="code" />
+                    <result column="datatype" property="datatype" />
+                    <result column="enable" property="enable" />
+                    <result column="pgcode" property="pgcode" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, code, datatype, enable, pgcode, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

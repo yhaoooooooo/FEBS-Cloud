@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.PubBillconditionItemMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.PubBillconditionItem">
+                    <id column="id" property="id" />
+                    <result column="code" property="code" />
+                    <result column="conditionshow" property="conditionshow" />
+                    <result column="datatype" property="datatype" />
+                    <result column="defaultvalue" property="defaultvalue" />
+                    <result column="field" property="field" />
+                    <result column="lable" property="lable" />
+                    <result column="operator" property="operator" />
+                    <result column="parenttable" property="parenttable" />
+                    <result column="reftype" property="reftype" />
+                    <result column="showorder" property="showorder" />
+                    <result column="showformat" property="showformat" />
+                    <result column="optvalue" property="optvalue" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, code, conditionshow, datatype, defaultvalue, field, lable, operator, parenttable, reftype, showorder, showformat, optvalue, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

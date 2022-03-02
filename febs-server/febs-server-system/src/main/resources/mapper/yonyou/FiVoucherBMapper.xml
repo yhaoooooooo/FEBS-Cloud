@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiVoucherBMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiVoucherB">
+                    <id column="id" property="id" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="creator" property="creator" />
+                    <result column="description" property="description" />
+                    <result column="description2" property="description2" />
+                    <result column="description3" property="description3" />
+                    <result column="description4" property="description4" />
+                    <result column="description5" property="description5" />
+                    <result column="description6" property="description6" />
+                    <result column="dr" property="dr" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="ts" property="ts" />
+                    <result column="accsubject" property="accsubject" />
+                    <result column="auxiliary" property="auxiliary" />
+                    <result column="credit_global" property="creditGlobal" />
+                    <result column="credit_group" property="creditGroup" />
+                    <result column="credit_org" property="creditOrg" />
+                    <result column="credit_original" property="creditOriginal" />
+                    <result column="credit_quantity" property="creditQuantity" />
+                    <result column="currency" property="currency" />
+                    <result column="debit_global" property="debitGlobal" />
+                    <result column="debit_group" property="debitGroup" />
+                    <result column="debit_org" property="debitOrg" />
+                    <result column="debit_original" property="debitOriginal" />
+                    <result column="debit_quantity" property="debitQuantity" />
+                    <result column="price" property="price" />
+                    <result column="rate_global" property="rateGlobal" />
+                    <result column="rate_group" property="rateGroup" />
+                    <result column="rate_org" property="rateOrg" />
+                    <result column="rate_org_op" property="rateOrgOp" />
+                    <result column="recordnumber" property="recordnumber" />
+                    <result column="voucherid" property="voucherid" />
+                    <result column="flag" property="flag" />
+                    <result column="busidate" property="busidate" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="editrule" property="editrule" />
+                    <result column="quantity" property="quantity" />
+                    <result column="secondorg" property="secondorg" />
+                    <result column="ratetype" property="ratetype" />
+                    <result column="accbook" property="accbook" />
+                    <result column="period" property="period" />
+                    <result column="checkflag" property="checkflag" />
+                    <result column="checkno" property="checkno" />
+                    <result column="bankreconciliationsettingid" property="bankreconciliationsettingid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, creationtime, creator, description, description2, description3, description4, description5, description6, dr, modifiedtime, modifier, pk_group, pk_org, ts, accsubject, auxiliary, credit_global, credit_group, credit_org, credit_original, credit_quantity, currency, debit_global, debit_group, debit_org, debit_original, debit_quantity, price, rate_global, rate_group, rate_org, rate_org_op, recordnumber, voucherid, flag, busidate, tenantid, srctplid, editrule, quantity, secondorg, ratetype, accbook, period, checkflag, checkno, bankreconciliationsettingid, ytenant_id
+        </sql>
+
+</mapper>

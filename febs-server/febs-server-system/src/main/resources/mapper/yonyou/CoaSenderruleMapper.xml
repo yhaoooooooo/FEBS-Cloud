@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaSenderruleMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaSenderrule">
+                    <id column="id" property="id" />
+                    <result column="allocrule" property="allocrule" />
+                    <result column="func" property="func" />
+                    <result column="direction" property="direction" />
+                    <result column="rate" property="rate" />
+                    <result column="auxiliarys" property="auxiliarys" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ruletype" property="ruletype" />
+                    <result column="mount" property="mount" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            allocrule, func, direction, rate, auxiliarys, tenantid, srctplid, id, ruletype, mount, ytenant_id
+        </sql>
+
+</mapper>

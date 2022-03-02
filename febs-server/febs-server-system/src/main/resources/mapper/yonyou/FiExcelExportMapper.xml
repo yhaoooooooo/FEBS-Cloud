@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiExcelExportMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiExcelExport">
+                    <id column="id" property="id" />
+                    <result column="filename" property="filename" />
+                    <result column="attribute" property="attribute" />
+                    <result column="columnwidth" property="columnwidth" />
+                    <result column="head0" property="head0" />
+                    <result column="head1" property="head1" />
+                    <result column="head2" property="head2" />
+                    <result column="head3" property="head3" />
+                    <result column="head4" property="head4" />
+                    <result column="headnum0" property="headnum0" />
+                    <result column="headnum1" property="headnum1" />
+                    <result column="headnum2" property="headnum2" />
+                    <result column="headnum3" property="headnum3" />
+                    <result column="headnum4" property="headnum4" />
+                    <result column="methedname" property="methedname" />
+                    <result column="size" property="size" />
+                    <result column="creator" property="creator" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="description" property="description" />
+                    <result column="ts" property="ts" />
+                    <result column="dr" property="dr" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, filename, attribute, columnwidth, head0, head1, head2, head3, head4, headnum0, headnum1, headnum2, headnum3, headnum4, methedname, size, creator, creationtime, modifier, modifiedtime, pk_org, pk_group, description, ts, dr, srctplid, tenantid, ytenant_id
+        </sql>
+
+</mapper>

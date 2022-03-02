@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaModuledetaileMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaModuledetaile">
+                    <id column="id" property="id" />
+                    <result column="field_name" property="fieldName" />
+                    <result column="operation" property="operation" />
+                    <result column="field_code" property="fieldCode" />
+                    <result column="value" property="value" />
+                    <result column="moduleid" property="moduleid" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            field_name, operation, field_code, value, moduleid, tenantid, srctplid, id, ytenant_id
+        </sql>
+
+</mapper>

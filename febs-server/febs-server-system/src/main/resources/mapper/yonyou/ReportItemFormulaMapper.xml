@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ReportItemFormulaMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ReportItemFormula">
+                    <id column="id" property="id" />
+                    <result column="model_id" property="modelId" />
+                    <result column="rpt_item_code" property="rptItemCode" />
+                    <result column="rpt_item_id" property="rptItemId" />
+                    <result column="subjectcode" property="subjectcode" />
+                    <result column="symbol" property="symbol" />
+                    <result column="type" property="type" />
+                    <result column="appid" property="appid" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="accsubjectchart" property="accsubjectchart" />
+                    <result column="ts" property="ts" />
+                    <result column="level_id" property="levelId" />
+                    <result column="rule" property="rule" />
+                    <result column="rpt_item_rule" property="rptItemRule" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="sort" property="sort" />
+                    <result column="src_data_type" property="srcDataType" />
+                    <result column="auxiliary_hash" property="auxiliaryHash" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, model_id, rpt_item_code, rpt_item_id, subjectcode, symbol, type, appid, tenantid, accsubjectchart, ts, level_id, rule, rpt_item_rule, srctplid, sort, src_data_type, auxiliary_hash, ytenant_id
+        </sql>
+
+</mapper>

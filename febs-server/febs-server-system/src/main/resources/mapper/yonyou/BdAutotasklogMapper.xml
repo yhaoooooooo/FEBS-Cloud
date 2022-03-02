@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.BdAutotasklogMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.BdAutotasklog">
+                    <id column="id" property="id" />
+                    <result column="autotask" property="autotask" />
+                    <result column="autosubtask" property="autosubtask" />
+                    <result column="rule" property="rule" />
+                    <result column="rulecode" property="rulecode" />
+                    <result column="rulename" property="rulename" />
+                    <result column="starttime" property="starttime" />
+                    <result column="endtime" property="endtime" />
+                    <result column="status" property="status" />
+                    <result column="description" property="description" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="rulename2" property="rulename2" />
+                    <result column="rulename3" property="rulename3" />
+                    <result column="rulename4" property="rulename4" />
+                    <result column="rulename5" property="rulename5" />
+                    <result column="rulename6" property="rulename6" />
+                    <result column="description2" property="description2" />
+                    <result column="description3" property="description3" />
+                    <result column="description4" property="description4" />
+                    <result column="description5" property="description5" />
+                    <result column="description6" property="description6" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, autotask, autosubtask, rule, rulecode, rulename, starttime, endtime, status, description, tenantid, srctplid, rulename2, rulename3, rulename4, rulename5, rulename6, description2, description3, description4, description5, description6, ytenant_id
+        </sql>
+
+</mapper>

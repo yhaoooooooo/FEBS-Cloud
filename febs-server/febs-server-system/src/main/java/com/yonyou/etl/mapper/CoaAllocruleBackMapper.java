@@ -1,0 +1,10 @@
+package com.yonyou.etl.mapper;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.yonyou.etl.entity.CoaAllocruleBack;
+
+/**
+* @author yhao
+*/
+public interface CoaAllocruleBackMapper extends BaseMapper<CoaAllocruleBack> {
+}

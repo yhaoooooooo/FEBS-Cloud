@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.IaSeqvoMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.IaSeqvo">
+                    <id column="id" property="id" />
+                    <result column="accbooktype" property="accbooktype" />
+                    <result column="accbody" property="accbody" />
+                    <result column="costreg" property="costreg" />
+                    <result column="costobject" property="costobject" />
+                    <result column="inminseq" property="inminseq" />
+                    <result column="outminseq" property="outminseq" />
+                    <result column="pubts" property="pubts" />
+                    <result column="tenant_id" property="tenantId" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            accbooktype, accbody, costreg, costobject, inminseq, outminseq, id, pubts, tenant_id, ytenant_id
+        </sql>
+
+</mapper>

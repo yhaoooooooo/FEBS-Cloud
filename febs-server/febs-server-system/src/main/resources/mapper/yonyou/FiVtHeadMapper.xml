@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.FiVtHeadMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.FiVtHead">
+                    <id column="id" property="id" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="creator" property="creator" />
+                    <result column="description" property="description" />
+                    <result column="dr" property="dr" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="ts" property="ts" />
+                    <result column="accbook" property="accbook" />
+                    <result column="accstandard" property="accstandard" />
+                    <result column="accbody" property="accbody" />
+                    <result column="category" property="category" />
+                    <result column="code" property="code" />
+                    <result column="ismachine" property="ismachine" />
+                    <result column="name" property="name" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="outserviceimpl" property="outserviceimpl" />
+                    <result column="outserviceparams" property="outserviceparams" />
+                    <result column="settlestrategy" property="settlestrategy" />
+                    <result column="showorder" property="showorder" />
+                    <result column="terminal" property="terminal" />
+                    <result column="vouchertype" property="vouchertype" />
+                    <result column="vtlevel" property="vtlevel" />
+                    <result column="accsubjectchart" property="accsubjectchart" />
+                    <result column="periodtype" property="periodtype" />
+                    <result column="effectperiod" property="effectperiod" />
+                    <result column="expiryperiod" property="expiryperiod" />
+                    <result column="parmk1" property="parmk1" />
+                    <result column="parmt1" property="parmt1" />
+                    <result column="parmv1" property="parmv1" />
+                    <result column="parmk2" property="parmk2" />
+                    <result column="parmt2" property="parmt2" />
+                    <result column="parmv2" property="parmv2" />
+                    <result column="parmk3" property="parmk3" />
+                    <result column="parmt3" property="parmt3" />
+                    <result column="parmv3" property="parmv3" />
+                    <result column="parmk4" property="parmk4" />
+                    <result column="parmt4" property="parmt4" />
+                    <result column="parmv4" property="parmv4" />
+                    <result column="parmk5" property="parmk5" />
+                    <result column="parmt5" property="parmt5" />
+                    <result column="parmv5" property="parmv5" />
+                    <result column="parmk6" property="parmk6" />
+                    <result column="parmt6" property="parmt6" />
+                    <result column="parmv6" property="parmv6" />
+                    <result column="parmk7" property="parmk7" />
+                    <result column="parmt7" property="parmt7" />
+                    <result column="parmv7" property="parmv7" />
+                    <result column="parmk8" property="parmk8" />
+                    <result column="parmt8" property="parmt8" />
+                    <result column="parmv8" property="parmv8" />
+                    <result column="parmk9" property="parmk9" />
+                    <result column="parmt9" property="parmt9" />
+                    <result column="parmv9" property="parmv9" />
+                    <result column="parmk10" property="parmk10" />
+                    <result column="parmv10" property="parmv10" />
+                    <result column="parmt10" property="parmt10" />
+                    <result column="parmk11" property="parmk11" />
+                    <result column="parmv11" property="parmv11" />
+                    <result column="parmt11" property="parmt11" />
+                    <result column="parmk12" property="parmk12" />
+                    <result column="parmv12" property="parmv12" />
+                    <result column="parmt12" property="parmt12" />
+                    <result column="parmk13" property="parmk13" />
+                    <result column="parmv13" property="parmv13" />
+                    <result column="parmt13" property="parmt13" />
+                    <result column="parmk14" property="parmk14" />
+                    <result column="parmv14" property="parmv14" />
+                    <result column="parmt14" property="parmt14" />
+                    <result column="parmk15" property="parmk15" />
+                    <result column="parmv15" property="parmv15" />
+                    <result column="parmt15" property="parmt15" />
+                    <result column="parmk16" property="parmk16" />
+                    <result column="parmv16" property="parmv16" />
+                    <result column="parmt16" property="parmt16" />
+                    <result column="parmk17" property="parmk17" />
+                    <result column="parmv17" property="parmv17" />
+                    <result column="parmt17" property="parmt17" />
+                    <result column="parmk18" property="parmk18" />
+                    <result column="parmv18" property="parmv18" />
+                    <result column="parmt18" property="parmt18" />
+                    <result column="parmk19" property="parmk19" />
+                    <result column="parmv19" property="parmv19" />
+                    <result column="parmt19" property="parmt19" />
+                    <result column="parmk20" property="parmk20" />
+                    <result column="parmv20" property="parmv20" />
+                    <result column="parmt20" property="parmt20" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="from_accbook" property="fromAccbook" />
+                    <result column="description2" property="description2" />
+                    <result column="description3" property="description3" />
+                    <result column="description4" property="description4" />
+                    <result column="description5" property="description5" />
+                    <result column="description6" property="description6" />
+                    <result column="rulevouchersort" property="rulevouchersort" />
+                    <result column="profitaloss" property="profitaloss" />
+                    <result column="profitaccsubject" property="profitaccsubject" />
+                    <result column="currencycarry" property="currencycarry" />
+                    <result column="carrytype" property="carrytype" />
+                    <result column="manualaccsubject" property="manualaccsubject" />
+                    <result column="vdescription" property="vdescription" />
+                    <result column="vdescription2" property="vdescription2" />
+                    <result column="vdescription3" property="vdescription3" />
+                    <result column="vdescription4" property="vdescription4" />
+                    <result column="vdescription5" property="vdescription5" />
+                    <result column="vdescription6" property="vdescription6" />
+                    <result column="ytenant_id" property="ytenantId" />
+                    <result column="template_type" property="templateType" />
+                    <result column="share" property="share" />
+                    <result column="formula" property="formula" />
+                    <result column="cashflowitem" property="cashflowitem" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, creationtime, creator, description, dr, modifiedtime, modifier, pk_group, pk_org, ts, accbook, accstandard, accbody, category, code, ismachine, name, name2, name3, name4, name5, name6, outserviceimpl, outserviceparams, settlestrategy, showorder, terminal, vouchertype, vtlevel, accsubjectchart, periodtype, effectperiod, expiryperiod, parmk1, parmt1, parmv1, parmk2, parmt2, parmv2, parmk3, parmt3, parmv3, parmk4, parmt4, parmv4, parmk5, parmt5, parmv5, parmk6, parmt6, parmv6, parmk7, parmt7, parmv7, parmk8, parmt8, parmv8, parmk9, parmt9, parmv9, parmk10, parmv10, parmt10, parmk11, parmv11, parmt11, parmk12, parmv12, parmt12, parmk13, parmv13, parmt13, parmk14, parmv14, parmt14, parmk15, parmv15, parmt15, parmk16, parmv16, parmt16, parmk17, parmv17, parmt17, parmk18, parmv18, parmt18, parmk19, parmv19, parmt19, parmk20, parmv20, parmt20, tenantid, srctplid, from_accbook, description2, description3, description4, description5, description6, rulevouchersort, profitaloss, profitaccsubject, currencycarry, carrytype, manualaccsubject, vdescription, vdescription2, vdescription3, vdescription4, vdescription5, vdescription6, ytenant_id, template_type, share, formula, cashflowitem
+        </sql>
+
+</mapper>

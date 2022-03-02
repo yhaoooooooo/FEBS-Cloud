@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ReportModelInfoMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ReportModelInfo">
+                    <id column="id" property="id" />
+                    <result column="name" property="name" />
+                    <result column="code" property="code" />
+                    <result column="pid" property="pid" />
+                    <result column="type" property="type" />
+                    <result column="sub_type" property="subType" />
+                    <result column="tech_type" property="techType" />
+                    <result column="is_sys" property="isSys" />
+                    <result column="labels" property="labels" />
+                    <result column="deploy" property="deploy" />
+                    <result column="status" property="status" />
+                    <result column="version" property="version" />
+                    <result column="rule" property="rule" />
+                    <result column="etl" property="etl" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="pkcolumn" property="pkcolumn" />
+                    <result column="ts" property="ts" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="fetch_type" property="fetchType" />
+                    <result column="fetch_url" property="fetchUrl" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, name, code, pid, type, sub_type, tech_type, is_sys, labels, deploy, status, version, rule, etl, name2, name3, name4, name5, name6, pkcolumn, ts, tenantid, srctplid, fetch_type, fetch_url, ytenant_id
+        </sql>
+
+</mapper>

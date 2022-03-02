@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaAllocfaildetailMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaAllocfaildetail">
+                    <id column="id" property="id" />
+                    <result column="allocplan" property="allocplan" />
+                    <result column="accentity" property="accentity" />
+                    <result column="accbook" property="accbook" />
+                    <result column="billcode" property="billcode" />
+                    <result column="vouchertype" property="vouchertype" />
+                    <result column="busidate" property="busidate" />
+                    <result column="maketime" property="maketime" />
+                    <result column="srcsystem" property="srcsystem" />
+                    <result column="recordnumber" property="recordnumber" />
+                    <result column="recordid" property="recordid" />
+                    <result column="description" property="description" />
+                    <result column="allocrule" property="allocrule" />
+                    <result column="rootrule" property="rootrule" />
+                    <result column="rootorg" property="rootorg" />
+                    <result column="srcorg" property="srcorg" />
+                    <result column="descorg" property="descorg" />
+                    <result column="syear" property="syear" />
+                    <result column="speriod" property="speriod" />
+                    <result column="rootfactor" property="rootfactor" />
+                    <result column="srcfactor" property="srcfactor" />
+                    <result column="descfactor" property="descfactor" />
+                    <result column="rootcurrtype" property="rootcurrtype" />
+                    <result column="srccurrtype" property="srccurrtype" />
+                    <result column="rootdcorient" property="rootdcorient" />
+                    <result column="srcdcorient" property="srcdcorient" />
+                    <result column="descdcorient" property="descdcorient" />
+                    <result column="rootdimgroups" property="rootdimgroups" />
+                    <result column="srcdimgroups" property="srcdimgroups" />
+                    <result column="descdimgroups" property="descdimgroups" />
+                    <result column="rootcostcenter" property="rootcostcenter" />
+                    <result column="costcenter" property="costcenter" />
+                    <result column="desccostcenter" property="desccostcenter" />
+                    <result column="credit_org" property="creditOrg" />
+                    <result column="debit_org" property="debitOrg" />
+                    <result column="failreason" property="failreason" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="amount" property="amount" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            allocplan, accentity, accbook, billcode, vouchertype, busidate, maketime, srcsystem, recordnumber, recordid, description, allocrule, rootrule, rootorg, srcorg, descorg, syear, speriod, rootfactor, srcfactor, descfactor, rootcurrtype, srccurrtype, rootdcorient, srcdcorient, descdcorient, rootdimgroups, srcdimgroups, descdimgroups, rootcostcenter, costcenter, desccostcenter, credit_org, debit_org, failreason, tenantid, srctplid, id, amount, ytenant_id
+        </sql>
+
+</mapper>

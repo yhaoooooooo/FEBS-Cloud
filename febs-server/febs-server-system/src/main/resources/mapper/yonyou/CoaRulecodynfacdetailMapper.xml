@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaRulecodynfacdetailMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaRulecodynfacdetail">
+                    <id column="id" property="id" />
+                    <result column="codynfac" property="codynfac" />
+                    <result column="rownumber" property="rownumber" />
+                    <result column="rate" property="rate" />
+                    <result column="negativeset" property="negativeset" />
+                    <result column="maversion" property="maversion" />
+                    <result column="datascope" property="datascope" />
+                    <result column="direction" property="direction" />
+                    <result column="costelementgroup" property="costelementgroup" />
+                    <result column="ccstatisindicators" property="ccstatisindicators" />
+                    <result column="bdactivitytype" property="bdactivitytype" />
+                    <result column="costelementstart" property="costelementstart" />
+                    <result column="costelementend" property="costelementend" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="rulecodynfacid" property="rulecodynfacid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            codynfac, rownumber, rate, negativeset, maversion, datascope, direction, costelementgroup, ccstatisindicators, bdactivitytype, costelementstart, costelementend, tenantid, srctplid, rulecodynfacid, id, ytenant_id
+        </sql>
+
+</mapper>

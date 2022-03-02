@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.WbAppAppsMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.WbAppApps">
+                    <id column="app_code" property="appCode" />
+                    <result column="Id" property="id" />
+                    <result column="app_name" property="appName" />
+                    <result column="app_index" property="appIndex" />
+                    <result column="group_id" property="groupId" />
+                    <result column="domain_id" property="domainId" />
+                    <result column="url" property="url" />
+                    <result column="app_chinese" property="appChinese" />
+                    <result column="app_desc" property="appDesc" />
+                    <result column="app_icon" property="appIcon" />
+                    <result column="app_groupcode" property="appGroupcode" />
+                    <result column="dyna_url" property="dynaUrl" />
+                    <result column="tenant_id" property="tenantId" />
+                    <result column="urltype" property="urltype" />
+                    <result column="version" property="version" />
+                    <result column="system" property="system" />
+                    <result column="label" property="label" />
+                    <result column="create_date" property="createDate" />
+                    <result column="modify_date" property="modifyDate" />
+                    <result column="creator" property="creator" />
+                    <result column="reviser" property="reviser" />
+                    <result column="showway" property="showway" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            Id, app_name, app_index, group_id, domain_id, url, app_chinese, app_desc, app_icon, app_groupcode, app_code, dyna_url, tenant_id, urltype, version, system, label, create_date, modify_date, creator, reviser, showway, name2, name3, name4, name5, name6, ytenant_id
+        </sql>
+
+</mapper>

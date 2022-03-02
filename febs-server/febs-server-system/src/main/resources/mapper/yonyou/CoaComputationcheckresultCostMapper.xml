@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.CoaComputationcheckresultCostMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.CoaComputationcheckresultCost">
+                    <id column="id" property="id" />
+                    <result column="checkid" property="checkid" />
+                    <result column="taskcode" property="taskcode" />
+                    <result column="taskname" property="taskname" />
+                    <result column="taskname2" property="taskname2" />
+                    <result column="taskname3" property="taskname3" />
+                    <result column="taskname4" property="taskname4" />
+                    <result column="taskname5" property="taskname5" />
+                    <result column="taskname6" property="taskname6" />
+                    <result column="dycode" property="dycode" />
+                    <result column="dyname" property="dyname" />
+                    <result column="dyname2" property="dyname2" />
+                    <result column="dyname3" property="dyname3" />
+                    <result column="dyname4" property="dyname4" />
+                    <result column="dyname5" property="dyname5" />
+                    <result column="dyname6" property="dyname6" />
+                    <result column="year" property="year" />
+                    <result column="period" property="period" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="message" property="message" />
+                    <result column="message2" property="message2" />
+                    <result column="message3" property="message3" />
+                    <result column="message4" property="message4" />
+                    <result column="message5" property="message5" />
+                    <result column="message6" property="message6" />
+                    <result column="voucherno" property="voucherno" />
+                    <result column="voucherdate" property="voucherdate" />
+                    <result column="costobjecttype" property="costobjecttype" />
+                    <result column="costobjectvalue" property="costobjectvalue" />
+                    <result column="accbookamount" property="accbookamount" />
+                    <result column="costfactor" property="costfactor" />
+                    <result column="direction" property="direction" />
+                    <result column="activitytype" property="activitytype" />
+                    <result column="activitytotalnum" property="activitytotalnum" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, checkid, taskcode, taskname, taskname2, taskname3, taskname4, taskname5, taskname6, dycode, dyname, dyname2, dyname3, dyname4, dyname5, dyname6, year, period, tenantid, message, message2, message3, message4, message5, message6, voucherno, voucherdate, costobjecttype, costobjectvalue, accbookamount, costfactor, direction, activitytype, activitytotalnum, srctplid, ytenant_id
+        </sql>
+
+</mapper>

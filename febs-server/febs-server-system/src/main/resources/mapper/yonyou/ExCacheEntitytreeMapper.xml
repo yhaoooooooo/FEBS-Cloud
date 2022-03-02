@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.ExCacheEntitytreeMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.ExCacheEntitytree">
+                    <id column="id" property="id" />
+                    <result column="entityid" property="entityid" />
+                    <result column="entity_property_tree" property="entityPropertyTree" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, entityid, entity_property_tree, tenantid, ytenant_id
+        </sql>
+
+</mapper>

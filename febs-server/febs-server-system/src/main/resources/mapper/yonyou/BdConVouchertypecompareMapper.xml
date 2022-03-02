@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.BdConVouchertypecompareMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.BdConVouchertypecompare">
+                    <id column="id" property="id" />
+                    <result column="sourcevouchertype" property="sourcevouchertype" />
+                    <result column="aimvouchertype" property="aimvouchertype" />
+                    <result column="accbookconvertplan" property="accbookconvertplan" />
+                    <result column="creator" property="creator" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="modifier" property="modifier" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="description" property="description" />
+                    <result column="ts" property="ts" />
+                    <result column="dr" property="dr" />
+                    <result column="state" property="state" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, sourcevouchertype, aimvouchertype, accbookconvertplan, creator, creationtime, modifier, modifiedtime, pk_org, pk_group, description, ts, dr, state, tenantid, srctplid, ytenant_id
+        </sql>
+
+</mapper>

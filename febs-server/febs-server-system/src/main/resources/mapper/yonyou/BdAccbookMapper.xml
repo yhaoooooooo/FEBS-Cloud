@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.BdAccbookMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.BdAccbook">
+                    <id column="id" property="id" />
+                    <result column="creationtime" property="creationtime" />
+                    <result column="creator" property="creator" />
+                    <result column="description" property="description" />
+                    <result column="dr" property="dr" />
+                    <result column="modifiedtime" property="modifiedtime" />
+                    <result column="pk_group" property="pkGroup" />
+                    <result column="pk_org" property="pkOrg" />
+                    <result column="ts" property="ts" />
+                    <result column="classifyid" property="classifyid" />
+                    <result column="code" property="code" />
+                    <result column="def1" property="def1" />
+                    <result column="def10" property="def10" />
+                    <result column="def11" property="def11" />
+                    <result column="def12" property="def12" />
+                    <result column="def13" property="def13" />
+                    <result column="def14" property="def14" />
+                    <result column="def15" property="def15" />
+                    <result column="def16" property="def16" />
+                    <result column="def17" property="def17" />
+                    <result column="def18" property="def18" />
+                    <result column="def19" property="def19" />
+                    <result column="def2" property="def2" />
+                    <result column="def20" property="def20" />
+                    <result column="def21" property="def21" />
+                    <result column="def22" property="def22" />
+                    <result column="def23" property="def23" />
+                    <result column="def24" property="def24" />
+                    <result column="def25" property="def25" />
+                    <result column="def26" property="def26" />
+                    <result column="def27" property="def27" />
+                    <result column="def28" property="def28" />
+                    <result column="def29" property="def29" />
+                    <result column="def3" property="def3" />
+                    <result column="def30" property="def30" />
+                    <result column="def4" property="def4" />
+                    <result column="def5" property="def5" />
+                    <result column="def6" property="def6" />
+                    <result column="def7" property="def7" />
+                    <result column="def8" property="def8" />
+                    <result column="def9" property="def9" />
+                    <result column="enable" property="enable" />
+                    <result column="name" property="name" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="parentid" property="parentid" />
+                    <result column="accperiod" property="accperiod" />
+                    <result column="accperiodscheme" property="accperiodscheme" />
+                    <result column="accpurposes" property="accpurposes" />
+                    <result column="accstandard" property="accstandard" />
+                    <result column="accsubject" property="accsubject" />
+                    <result column="autoaudit" property="autoaudit" />
+                    <result column="autotally" property="autotally" />
+                    <result column="balanceDisplay" property="balancedisplay" />
+                    <result column="bookType" property="booktype" />
+                    <result column="currency" property="currency" />
+                    <result column="currencySchema" property="currencyschema" />
+                    <result column="incomeSubject" property="incomesubject" />
+                    <result column="loseSubject" property="losesubject" />
+                    <result column="multidimension" property="multidimension" />
+                    <result column="profitMethod" property="profitmethod" />
+                    <result column="shortname" property="shortname" />
+                    <result column="shortname2" property="shortname2" />
+                    <result column="shortname3" property="shortname3" />
+                    <result column="shortname4" property="shortname4" />
+                    <result column="shortname5" property="shortname5" />
+                    <result column="shortname6" property="shortname6" />
+                    <result column="subjectchart" property="subjectchart" />
+                    <result column="accountCheckStragegy" property="accountcheckstragegy" />
+                    <result column="cashFlowType" property="cashflowtype" />
+                    <result column="voucher_print_type" property="voucherPrintType" />
+                    <result column="aotu_supplement_NO" property="aotuSupplementNo" />
+                    <result column="tenantid" property="tenantid" />
+                    <result column="srctplid" property="srctplid" />
+                    <result column="audit_cancel" property="auditCancel" />
+                    <result column="same_person" property="samePerson" />
+                    <result column="same_modified" property="sameModified" />
+                    <result column="sequential" property="sequential" />
+                    <result column="convertable" property="convertable" />
+                    <result column="modifier" property="modifier" />
+                    <result column="systemgene" property="systemgene" />
+                    <result column="is_secondorg" property="isSecondorg" />
+                    <result column="enable_model" property="enableModel" />
+                    <result column="ratetype" property="ratetype" />
+                    <result column="carrydown_ratetype" property="carrydownRatetype" />
+                    <result column="check_cashflow" property="checkCashflow" />
+                    <result column="nextperiod" property="nextperiod" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, creationtime, creator, description, dr, modifiedtime, pk_group, pk_org, ts, classifyid, code, def1, def10, def11, def12, def13, def14, def15, def16, def17, def18, def19, def2, def20, def21, def22, def23, def24, def25, def26, def27, def28, def29, def3, def30, def4, def5, def6, def7, def8, def9, enable, name, name2, name3, name4, name5, name6, parentid, accperiod, accperiodscheme, accpurposes, accstandard, accsubject, autoaudit, autotally, balanceDisplay, bookType, currency, currencySchema, incomeSubject, loseSubject, multidimension, profitMethod, shortname, shortname2, shortname3, shortname4, shortname5, shortname6, subjectchart, accountCheckStragegy, cashFlowType, voucher_print_type, aotu_supplement_NO, tenantid, srctplid, audit_cancel, same_person, same_modified, sequential, convertable, modifier, systemgene, is_secondorg, enable_model, ratetype, carrydown_ratetype, check_cashflow, nextperiod, ytenant_id
+        </sql>
+
+</mapper>

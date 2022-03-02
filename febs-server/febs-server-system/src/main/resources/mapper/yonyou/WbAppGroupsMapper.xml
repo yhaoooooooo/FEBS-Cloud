@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yonyou.etl.mapper.WbAppGroupsMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yonyou.etl.entity.WbAppGroups">
+                    <id column="Id" property="id" />
+                    <result column="name" property="name" />
+                    <result column="app_groupindex" property="appGroupindex" />
+                    <result column="area_id" property="areaId" />
+                    <result column="tenant_id" property="tenantId" />
+                    <result column="name2" property="name2" />
+                    <result column="name3" property="name3" />
+                    <result column="name4" property="name4" />
+                    <result column="name5" property="name5" />
+                    <result column="name6" property="name6" />
+                    <result column="ytenant_id" property="ytenantId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            Id, name, app_groupindex, area_id, tenant_id, name2, name3, name4, name5, name6, ytenant_id
+        </sql>
+
+</mapper>
